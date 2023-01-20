@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Инга Егонская](https://up.htmlacademy.ru/htmlcss/36/user/2166645).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
