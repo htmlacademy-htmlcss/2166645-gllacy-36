@@ -9,7 +9,7 @@
 
   <body class="page__body">
     <header class="header">
-      <a class="header__logo" href="#">
+      <a class="header__logo">
         <img class="header__logo-icon" src="#" width="137" height="56" alt="Логотип Глейси.">
       </a>
       <nav class="header__nav nav">
@@ -21,40 +21,65 @@
                 Новинки
                 <ul class="new-goods__list">
                   <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">Сливочное</a>
+                    <a class="new-goods__link" href="#">
+                      Сливочное
+                    </a>
                   </li>
                   <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">Щербеты</a>
+                    <a class="new-goods__link" href="#">
+                      Щербеты
+                    </a>
                   </li>
                   <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">Фруктовый лед</a>
+                    <a class="new-goods__link" href="#">
+                      Фруктовый лед
+                    </a>
                   </li>
                   <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">Мелорин</a>
+                    <a class="new-goods__link" href="#">
+                      Мелорин
+                    </a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Доставка и оплата</a>
+            <a class="nav__link" href="#">
+              Доставка и оплата
+            </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">О компании</a>
+            <a class="nav__link" href="#">
+              О компании
+            </a>
           </li>
         </ul>
         <p class="nav__tel">
-          <a class="nav__link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="nav__link-tel" href="tel:+78005558628">
+            +7 800 555-86-28
+          </a>
         </p>
-        <ul class="nav__list-client">
-          <li class="nav__item-client client">
-            <a class="client__search-link" href="#">Найти</a>
+        <ul class="nav-user__list">
+          <li class="nav-user__item">
+            <a class="nav-user__link" href="#">
+              <span class="visually-hidden">
+                Найти
+              </span>
+            </a>
           </li>
-          <li class="nav__item-client  client">
-            <a class="client__basket" href="#">2 Товара</a>
+          <li class="nav-user__item">
+            <a class="nav-user__link" href="#">
+              Вход
+            </a>
           </li>
-          <li class="nav__item-client  client">
-            <a class="client__person" href="#">Вход</a>
+          <li class="nav-user__item">
+            <a class="nav-user__link" href="#">
+              <span class="visually-hidden">
+                Корзина
+              </span>
+              2 Товара
+            </a>
           </li>
         </ul>
       </nav>
@@ -77,18 +102,24 @@
                 Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт
                 для всей семьи.
               </p>
-              <button class="pagination__button-back" type="button">
-                <span class="visually-hidden">Назад</span>
-              </button>
-              <img class="pagination__main-picture" src="#" alt="Мороженое с клубничным джемом в вафильном стаканчике.">
-              <button class="pagination__button-forward" type="button">
-                <span class="visually-hidden">Вперед</span>
-              </button>
-              <img class="pagination__picture" src="#" alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
-              <img class="pagination__picture" src="#" alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
-              <button class="pagination__button-order button" type="button">
+              <button class="pagination__order-button button" type="button">
                 Заказать
               </button>
+              <button class="pagination__button-back" type="button">
+                <span class="visually-hidden">
+                  Назад
+                </span>
+              </button>
+              <img class="pagination__picture" src="#" alt="Мороженое с клубничным джемом в вафильном стаканчике.">
+              <button class="pagination__button-forward" type="button">
+                <span class="visually-hidden">
+                  Вперед
+                </span>
+              </button>
+              <img class="pagination__thumb" src="#"
+                alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
+              <img class="pagination__thumb" src="#"
+                alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
             </li>
             <li class="demo-pagination__item">
               <h3 class="pagination__title">
@@ -99,18 +130,25 @@
                 летний
                 день.
               </p>
-              <button class="pagination__button-back" type="button">
-                <span class="visually-hidden">Назад</span>
-              </button>
-              <img class="pagination__main-picture" src="#" alt="Сливочное мороженое со вкусом банана в вафильном стаканчике.">
-              <button class="pagination__button-forward" type="button">
-                <span class="visually-hidden">Вперед</span>
-              </button>
-              <img class="pagination__picture" src="#" alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
-              <img class="pagination__picture" src="#" alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
-              <button class="pagination__button-order button" type="button">
+              <button class="pagination__order-button button" type="button">
                 Заказать
               </button>
+              <button class="pagination__button-back" type="button">
+                <span class="visually-hidden">
+                  Назад
+                </span>
+              </button>
+              <img class="pagination__picture" src="#"
+                alt="Сливочное мороженое со вкусом банана в вафильном стаканчике.">
+              <button class="pagination__button-forward" type="button">
+                <span class="visually-hidden">
+                  Вперед
+                </span>
+              </button>
+              <img class="pagination__thumb" src="#"
+                alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
+              <img class="pagination__thumb" src="#"
+                alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
             </li>
             <li class="demo-pagination__item">
               <h3 class="pagination__title">
@@ -120,18 +158,24 @@
                 Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
                 возрастов.
               </p>
-              <button class="pagination__button-back" type="button">
-                <span class="visually-hidden">Назад</span>
-              </button>
-              <img class="pagination__main-picture" src="#" alt="Карамельный пломбир с маршмеллоу в вафильном стаканчике.">
-              <button class="pagination__button-forward" type="button">
-                <span class="visually-hidden">Вперед</span>
-              </button>
-              <img class="pagination__picture" src="#" alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
-              <img class="pagination__picture" src="#" alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
-              <button class="pagination__button-order button" type="button">
+              <button class="pagination__order-button button" type="button">
                 Заказать
               </button>
+              <button class="pagination__button-back" type="button">
+                <span class="visually-hidden">
+                  Назад
+                </span>
+              </button>
+              <img class="pagination__picture" src="#" alt="Карамельный пломбир с маршмеллоу в вафильном стаканчике.">
+              <button class="pagination__button-forward" type="button">
+                <span class="visually-hidden">
+                  Вперед
+                </span>
+              </button>
+              <img class="pagination__thumb" src="#"
+                alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
+              <img class="pagination__thumb" src="#"
+                alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
             </li>
           </ol>
           <ul class="social__list">
@@ -192,72 +236,80 @@
         </h2>
         <ul class="hit-ice-cream__list">
           <li class="hit-ice-cream__item">
-            <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Малинка.">
-            <p class="hit-ice-cream__name">
-              Малинка
-            </p>
-            <p class="hit-ice-cream__description">
-              Сливочное мороженое с малиновым джемом
-            </p>
+            <a class="hit-ice-cream__link" href="#">
+              <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Малинка.">
+              <h3 class="hit-ice-cream__name">
+                Малинка
+              </h3>
+              <p class="hit-ice-cream__description">
+                Сливочное мороженое с малиновым джемом
+              </p>
+            </a>
             <b class="hit-ice-cream__price">
               310 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-link" href="#">
+            <button class="hit-ice-cream__basket-button" type="button">
               <span class="visually-hidden">
                 Корзина
               </span>
-            </a>
+            </button>
           </li>
           <li class="hit-ice-cream__item">
-            <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Фисташка.">
-            <p class="hit-ice-cream__name">
-              Фисташка
-            </p>
-            <p class="hit-ice-cream__description">
-              Фисташковый пломбир с кусочками шоколада
-            </p>
+            <a class="hit-ice-cream__link" href="#">
+              <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Фисташка.">
+              <h3 class="hit-ice-cream__name">
+                Фисташка
+              </h3>
+              <p class="hit-ice-cream__description">
+                Фисташковый пломбир с кусочками шоколада
+              </p>
+            </a>
             <b class="hit-ice-cream__price">
               340 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-link" href="#">
+            <button class="hit-ice-cream__basket-button" type="button">
               <span class="visually-hidden">
                 Корзина
               </span>
-            </a>
+            </button>
           </li>
           <li class="hit-ice-cream__item">
-            <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Черника.">
-            <p class="hit-ice-cream__description">
-              Черника
-            </p>
-            <p class="hit-ice-cream__name">
-              Крем-брюле с черничным джемом
-            </p>
+            <a class="hit-ice-cream__link" href="#">
+              <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Черника.">
+              <h3 class="hit-ice-cream__description">
+                Черника
+              </h3>
+              <p class="hit-ice-cream__name">
+                Крем-брюле с черничным джемом
+              </p>
+            </a>
             <b class="hit-ice-cream__price">
               330 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-link" href="#">
+            <button class="hit-ice-cream__basket-button" type="button">
               <span class="visually-hidden">
                 Корзина
               </span>
-            </a>
+            </button>
           </li>
           <li class="hit-ice-cream__item">
-            <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Бабл-гам.">
-            <p class="hit-ice-cream__name">
-              Бабл-гам
-            </p>
-            <p class="hit-ice-cream__description">
-              Ванильный пломбир со сладкой посыпкой
-            </p>
+            <a class="hit-ice-cream__link" href="#">
+              <img class="hit-ice-cream__picture" src="#" alt="Шарик мороженого Бабл-гам.">
+              <h3 class="hit-ice-cream__name">
+                Бабл-гам
+              </h3>
+              <p class="hit-ice-cream__description">
+                Ванильный пломбир со сладкой посыпкой
+              </p>
+            </a>
             <b class="hit-ice-cream__price">
               320 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-link" href="#">
+            <button class="hit-ice-cream__basket-button" type="button">
               <span class="visually-hidden">
                 Корзина
               </span>
-            </a>
+            </button>
           </li>
         </ul>
       </section>
@@ -268,7 +320,8 @@
         </h2>
         <ul class="features__list">
           <li class="features__item">
-            <p class="features__description">Всё наше мороженое изготавливается на собственном производстве с использованием современного
+            <p class="features__description">Всё наше мороженое изготавливается на собственном производстве с
+              использованием современного
               оборудования и проверенных временем технологий.
             </p>
           </li>
@@ -294,16 +347,22 @@
       </section>
       <div class="blog-news__container">
         <article class="blog">
-          <h2 class="visually-hidden">Блог компании о мороженом</h2>
+          <h2 class="visually-hidden">
+            Блог компании о мороженом
+          </h2>
           <p class="blog_preview">
             Новое в нашем блоге
           </p>
           <h3 class="blog__title">
-            <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            <a class="blog__link" href="#">
+              10 способов сервировки фруктовых щербетов к столу
+            </a>
           </h3>
         </article>
         <section class="news">
-          <h2 class="visually-hidden">Рассылка новостей</h2>
+          <h2 class="visually-hidden">
+            Рассылка новостей
+          </h2>
           <p class="news__description">
             Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
@@ -326,19 +385,29 @@
           Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
           дом, и курьер привезёт вам ваш заказ в течение часа!
         </p>
-        <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery__action">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <label class="delivery__label" for="name">Дата
-            <input class="delivery__input" type="text" name="name" id="name" placeholder="01.04.2020">
-          </label>
-          <label class="delivery__label" for="tel">
-            Телефон
-            <input class="delivery__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
-          </label>
-          <label class="delivery__label" for="address">
-            Адрес
-            <input class="delivery__input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="address" id="address">
-          </label>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="delivery-form__action">
+            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          </p>
+          <p class="delivery-form__name">
+            <label class="delivery-form__label" for="name">
+              Дата
+              <input class="delivery-form__input" type="text" name="name" id="name" placeholder="01.04.2020">
+            </label>
+          </p>
+          <p class="delivery-form__tel">
+            <label class="delivery-form__label" for="tel">
+              Телефон
+              <input class="delivery__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
+            </label>
+          </p>
+          <p class="delivery-form__address">
+            <label class="delivery__label" for="address">
+              Адрес
+              <input class="delivery__input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="address"
+                id="address">
+            </label>
+          </p>
           <button class="delivery__button send-button" type="submit">
             Отправить
           </button>
@@ -353,9 +422,15 @@
             наб. реки Карповки, 5 лит П, Санкт-Петербург
           </address>
           <div class="address__tel-container">
-            <span class="address__text">Для заказов по телефону:</span>
-            <a class="address__tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <span class="address__timetable">(с 10 до 20 ежедневно)</span>
+            <span class="address__text">
+              Для заказов по телефону:
+            </span>
+            <a class="address__tel" href="tel:+78128121212">
+              +7 (812) 812-12-12
+            </a>
+            <span class="address__timetable">
+              (с 10 до 20 ежедневно)
+            </span>
           </div>
         </section>
       </div>
