@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="page__body">
@@ -117,47 +118,69 @@
             <legend class="fatness__legend">
               Жирность:
             </legend>
-            <label class="fatness__label">
-              <input class="fatness__input" type="radio" name="fat-content" value="0%">
-              <span class="fatness__text">0%</span>
-            </label>
-            <label class="fatness__label">
-              <input class="fatness__input" type="radio" name="fat-content" value="less10%" checked>
-              <span class="fatness__text">до 10%</span>
-            </label>
-            <label class="fatness__label">
-              <input class="fatness__input" type="radio" name="fat-content" value="less30%">
-              <span class="fatness__text">до 30%</span>
-            </label>
-            <label class="fatness__label">
-              <input class="fatness__input" type="radio" name="fat-content" value="more30%">
-              <span class="fatness__text">выше 30%</span>
-            </label>
+            <ul class="fatness__list">
+              <li class="fatness__item">
+                <label class="fatness__label">
+                  <input class="fatness__input" type="radio" name="fat-content" value="0%">
+                  <span class="fatness__text">0%</span>
+                </label>
+              </li>
+              <li class="fatness__item">
+                <label class="fatness__label">
+                  <input class="fatness__input" type="radio" name="fat-content" value="less10%" checked>
+                  <span class="fatness__text">до 10%</span>
+                </label>
+              </li>
+              <li class="fatness__item">
+                <label class="fatness__label">
+                  <input class="fatness__input" type="radio" name="fat-content" value="less30%">
+                  <span class="fatness__text">до 30%</span>
+                </label>
+              </li>
+              <li class="fatness__item">
+                <label class="fatness__label">
+                  <input class="fatness__input" type="radio" name="fat-content" value="more30%">
+                  <span class="fatness__text">выше 30%</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fillers fillers">
             <legend class="fillers__legend">
               Наполнители:
             </legend>
-            <label class="fillers__label">
-              <input class="fillers__input" type="checkbox" name="chocolate" value="chocolate" checked>
-              <span class="fillers__text">шоколадные</span>
-            </label>
-            <label class="fillers__label">
-              <input class="fillers__input" type="checkbox" name="sugar" value="sugar" checked>
-              <span class="fillers__text">сахарные посыпки</span>
-            </label>
-            <label class="fillers__label">
-              <input class="fillers__input" type="checkbox" name="fruits" value="fruits">
-              <span class="fillers__text">фрукты</span>
-            </label>
-            <label class="fillers__label">
-              <input class="fillers__input" type="checkbox" name="syrup" value="syrup">
-              <span class="fillers__text">сиропы</span>
-            </label>
-            <label class="fillers__label">
-              <input class="fillers__input" type="checkbox" name="jam" value="jam">
-              <span class="fillers__text">джемы</span>
-            </label>
+            <ul class="fillers__list">
+              <li class="fillers__item">
+                <label class="fillers__label">
+                  <input class="fillers__input" type="checkbox" name="chocolate" value="chocolate" checked>
+                  <span class="fillers__text">шоколадные</span>
+                </label>
+              </li>
+              <li class="fillers__item">
+                <label class="fillers__label">
+                  <input class="fillers__input" type="checkbox" name="sugar" value="sugar" checked>
+                  <span class="fillers__text">сахарные посыпки</span>
+                </label>
+              </li>
+              <li class="fillers__item">
+                <label class="fillers__label">
+                  <input class="fillers__input" type="checkbox" name="fruits" value="fruits">
+                  <span class="fillers__text">фрукты</span>
+                </label>
+              </li>
+              <li class="fillers__item">
+                <label class="fillers__label">
+                  <input class="fillers__input" type="checkbox" name="syrup" value="syrup">
+                  <span class="fillers__text">сиропы</span>
+                </label>
+              </li>
+              <li class="fillers__item">
+                <label class="fillers__label">
+                  <input class="fillers__input" type="checkbox" name="jam" value="jam">
+                  <span class="fillers__text">джемы</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
           <button class="form__button button" type="submit">
             Применить
@@ -166,7 +189,8 @@
         <ul class="selection__ice-cream ice-cream ice-cream__list">
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-raspberry.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-raspberry.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Малинка
               </h3>
@@ -185,7 +209,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-pistachio.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-pistachio.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Фисташка
               </h3>
@@ -204,7 +229,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__description">
                 Черника
               </h3>
@@ -223,7 +249,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-bubble-gum.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-bubble-gum.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Бабл-гам
               </h3>
@@ -242,7 +269,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-blackberry.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-blackberry.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Ежевика
               </h3>
@@ -261,7 +289,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-bananа.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-bananа.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Банан
               </h3>
@@ -280,7 +309,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-chocolate.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-chocolate.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__description">
                 Шоколадка
               </h3>
@@ -299,7 +329,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-strawberry.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-strawberry.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Клубничка
               </h3>
@@ -318,7 +349,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-lemon.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-lemon.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Лимон
               </h3>
@@ -337,7 +369,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-menthol.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-menthol.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Ментол
               </h3>
@@ -356,7 +389,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-nut.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-nut.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__description">
                 Орешек
               </h3>
@@ -375,7 +409,8 @@
           </li>
           <li class="ice-cream__item">
             <a class="ice-cream__link" href="#">
-              <img class="ice-cream__picture" src="images/catalog/scoop-cream-brulee.png" width="168" height="168" alt="Шарик мороженого.">
+              <img class="ice-cream__picture" src="images/catalog/scoop-cream-brulee.png" width="168" height="168"
+                alt="Шарик мороженого.">
               <h3 class="ice-cream__name">
                 Крем-брюле
               </h3>
