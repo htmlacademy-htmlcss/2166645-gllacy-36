@@ -27,6 +27,162 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #565C66;
-  background-color: #FEAFC3;
+  color: #565c66;
+  background-color: #feafc3;
+}
+
+.button {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  background-color: #fcfcfc;
+}
+
+.submit-button,
+.feedback-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+}
+
+.header__nav {
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.nav__link,
+.nav-catalog__link,
+.nav-user__link,
+.nav__link-tel {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.nav-catalog__link,
+.nav-user__link {
+  font-size: 14px;
+}
+
+.nav__link-tel,
+.nav-catalog__link--new {
+  font-weight: 700;
+}
+
+.pagination__item {
+  color: #2d3440;
+}
+
+.pagination__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.pagination__description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.title-section {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+}
+
+.gift__item {
+  color: #2d3440;
+  background-color: #ff7799;
+}
+
+.gift__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.ice-cream__item {
+  background-color: #fcfcfc;
+}
+
+.ice-cream__link {
+  text-decoration: none;
+}
+
+.ice-cream__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.ice-cream__description {
+  color: #565c66;
+}
+
+.ice-cream__price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.blog {
+  background-color: #ffffff;
+  background-image: url("../images/ice-cream-raspberry-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog_preview {
+  line-height: 20px;
+}
+
+.blog__link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.news {
+  background-color: #ffffff;
+}
+
+.news__input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
+.delivery {
+  background-color: #e7e7e7;
+  background-image: url("../images/ice-cream-fruits-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.delivery-form {
+  background-color: #fcfcfc;
+}
+
+.delivery-form__label {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.delivery-form__input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
+.address__container {
+  background-color: #e7e7e7;
+  background-image: url("../images/three-ice-creams-background.jpg");
+  background-repeat: no-repeat;
 }
