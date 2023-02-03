@@ -98,7 +98,7 @@
             </a>
           </li>
           <li class="breadcrumbs__item breadcrumbs__item--current">
-            <a class="breadcrumbs__link">
+            <a class="breadcrumbs__link breadcrumbs__link--current">
               Сливочное мороженое
             </a>
           </li>
@@ -109,11 +109,14 @@
       </header>
       <section class="selection">
         <form class="selection__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <select class="form__select select" aria-label="Сортировка">
-            <option value="select-popular">Популярные</option>
-            <option value="select-cheap">Дешёвые</option>
-            <option value="select-expensive">Дорогие</option>
-          </select>
+          <fieldset class="form__sort sort">
+            <legend class="sort__legend">Сортировка</legend>
+            <select class="sort__select" name="sort" id="sort" aria-label="Сортировка">
+              <option class="select__option" value="select-popular">по популярности</option>
+              <option value="select-price">по стоимости</option>
+              <option value="select-name">по названию</option>
+            </select>
+          </fieldset>
           <fieldset class="form__fatness fatness">
             <legend class="fatness__legend">
               Жирность:
@@ -182,7 +185,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">
+          <button class="form__button" type="submit">
             Применить
           </button>
         </form>
@@ -231,10 +234,10 @@
             <a class="ice-cream__link" href="#">
               <img class="ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168"
                 alt="Шарик мороженого.">
-              <h3 class="ice-cream__description">
+              <h3 class="ice-cream__name">
                 Черника
               </h3>
-              <p class="ice-cream__name">
+              <p class="ice-cream__description">
                 Крем-брюле с черничным джемом
               </p>
             </a>
@@ -311,10 +314,10 @@
             <a class="ice-cream__link" href="#">
               <img class="ice-cream__picture" src="images/catalog/scoop-chocolate.png" width="168" height="168"
                 alt="Шарик мороженого.">
-              <h3 class="ice-cream__description">
+              <h3 class="ice-cream__name">
                 Шоколадка
               </h3>
-              <p class="ice-cream__name">
+              <p class="ice-cream__description">
                 Классический шоколадный пломбир
               </p>
             </a>
@@ -391,10 +394,10 @@
             <a class="ice-cream__link" href="#">
               <img class="ice-cream__picture" src="images/catalog/scoop-nut.png" width="168" height="168"
                 alt="Шарик мороженого.">
-              <h3 class="ice-cream__description">
+              <h3 class="ice-cream__name">
                 Орешек
               </h3>
-              <p class="ice-cream__name">
+              <p class="ice-cream__description">
                 Фисташковый пломбир с шоколадным сиропом
               </p>
             </a>
@@ -428,6 +431,7 @@
             </a>
           </li>
         </ul>
+        <a class="pagination__button-show-more" href="#">Показать ещё</a>
         <ul class="selection__pagination pagination pagination__list">
           <li class="pagination__item">
             <a class="pagination__link pagination__link--prev pagination__link--disabled">
@@ -455,10 +459,64 @@
             </a>
           </li>
         </ul>
-        <a class="pagination__button-show-more" href="#">Показать ещё</a>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">
+              Телеграмм
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">
+              Вконтакте
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">
+              Youtube
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="useful-info__list">
+        <li class="useful-info__item useful-info__item--bold">
+          <a class="useful-info__link" href="#">
+            Для поставщиков
+          </a>
+        </li>
+        <li class="useful-info__item">
+          <a class="useful-info__link" href="#">
+            Наши документы
+          </a>
+        </li>
+        <li class="useful-info__item">
+          <a class="useful-info__link" href="#">
+            О производстве
+          </a>
+        </li>
+        <li class="useful-info__item">
+          <a class="useful-info__link" href="#">
+            Экологические стандарты
+          </a>
+        </li>
+      </ul>
+      <div class="footer__htmlacademy">
+        <a class="footer__logo-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">
+            Логотип HTML Academy
+          </span>
+        </a>
+        <small class="footer__made-in">
+          Сделано в <a class="footer__made-in-link" href="https://htmlacademy.ru/">.html academy</a> © 2021
+        </small>
+      </div>
     </footer>
   </body>
 

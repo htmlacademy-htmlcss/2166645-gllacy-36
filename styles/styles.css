@@ -186,3 +186,123 @@ body {
   background-image: url("../images/three-ice-creams-background.jpg");
   background-repeat: no-repeat;
 }
+
+.address__titile {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.address__address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.address__tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.address__timetable {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.address__button {
+  text-decoration: none;
+}
+
+.useful-info__link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.useful-info__item--bold {
+  font-weight: 700;
+}
+
+.footer__made-in {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2d3440;
+}
+
+.footer__made-in-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* catalog */
+.breadcrumbs__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.header-inner__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+}
+
+.selection,
+.form-select {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.sort__select {
+  background-color: rgba(252, 252, 252, 0.3);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.fatness__list {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.fillers__list {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.form__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.pagination__button-show-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+  background-color: #fcfcfc;
+}
+
+.pagination__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
