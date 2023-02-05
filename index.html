@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="page__body">
@@ -17,30 +18,30 @@
           <li class="nav__item nav-catalog">
             Каталог
             <ul class="nav-catalog__list">
-              <li class="nav-catalog__item new-goods">
-                Новинки
-                <ul class="new-goods__list">
-                  <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">
-                      Сливочное
-                    </a>
-                  </li>
-                  <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">
-                      Щербеты
-                    </a>
-                  </li>
-                  <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">
-                      Фруктовый лед
-                    </a>
-                  </li>
-                  <li class="new-goods__item">
-                    <a class="new-goods__link" href="#">
-                      Мелорин
-                    </a>
-                  </li>
-                </ul>
+              <li class="nav-catalog__item nav-catalog__item--new">
+                <a class="nav-catalog__link nav-catalog__link--new" href="#">
+                  Новинки
+                </a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">
+                  Сливочное
+                </a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">
+                  Щербеты
+                </a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">
+                  Фруктовый лед
+                </a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">
+                  Мелорин
+                </a>
               </li>
             </ul>
           </li>
@@ -100,7 +101,7 @@
                 Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт
                 для всей семьи.
               </p>
-              <a class="pagination__order-button" href="#">
+              <a class="pagination__order-button button" href="#">
                 Заказать
               </a>
               <button class="pagination__button-back" type="button">
@@ -108,17 +109,22 @@
                   Назад
                 </span>
               </button>
-              <img class="pagination__picture" src="images/ice-cream-strawberry-jam.png" width="327" height="507" alt="Мороженое с клубничным джемом в вафильном стаканчике.">
+              <img class="pagination__picture" src="images/ice-cream-strawberry-jam.png" width="327" height="507"
+                alt="Мороженое с клубничным джемом в вафильном стаканчике.">
               <button class="pagination__button-forward" type="button">
                 <span class="visually-hidden">
                   Вперед
                 </span>
               </button>
-              <div class="pagination__wrapper-thumb">
-                <img class=" pagination__thumb" src="images/ice-cream-creamy-banan.png" width="66" height="150"
-                  alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
-                <img class="pagination__thumb" src="images/ice-cream-caramel-marshmallow.png" width="66" height="150"
-                  alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
+              <div class="pagination__container-thumbs">
+                <div class="pagination__wrapper-thumb">
+                  <img class=" pagination__thumb" src="images/ice-cream-creamy-banan.png" width="66" height="150"
+                    alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
+                </div>
+                <div class="pagination__wrapper-thumb">
+                  <img class="pagination__thumb" src="images/ice-cream-caramel-marshmallow.png" width="66" height="150"
+                    alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
+                </div>
               </div>
             </li>
             <li class="demo-pagination__item">
@@ -130,7 +136,7 @@
                 летний
                 день.
               </p>
-              <a class="pagination__order-button" href="#">
+              <a class="pagination__order-button button" href="#">
                 Заказать
               </a>
               <button class="pagination__button-back" type="button">
@@ -145,11 +151,15 @@
                   Вперед
                 </span>
               </button>
-              <div class="pagination__wrapper-thumb">
-                <img class=" pagination__thumb" src="images/ice-cream-caramel-marshmallow.png" width="66" height="150"
-                  alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
-                <img class="pagination__thumb" src="images/ice-cream-strawberry-jam.png" width="66" height="150"
-                  alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
+              <div class="pagination__container-thumbs">
+                <div class="pagination__wrapper-thumb">
+                  <img class=" pagination__thumb" src="images/ice-cream-caramel-marshmallow.png" width="66" height="150"
+                    alt="Уменьшенный карамельный пломбир с маршмеллоу в вафильном стаканчике.">
+                </div>
+                <div class="pagination__wrapper-thumb">
+                  <img class="pagination__thumb" src="images/ice-cream-strawberry-jam.png" width="66" height="150"
+                    alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
+                </div>
               </div>
             </li>
             <li class="demo-pagination__item">
@@ -160,7 +170,7 @@
                 Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
                 возрастов.
               </p>
-              <a class="pagination__order-button" href="#">
+              <a class="pagination__order-button button" href="#">
                 Заказать
               </a>
               <button class="pagination__button-back" type="button">
@@ -168,17 +178,22 @@
                   Назад
                 </span>
               </button>
-              <img class="pagination__picture" src="images/ice-cream-caramel-marshmallow.png" width="312" height="507" alt="Карамельный пломбир с маршмеллоу в вафильном стаканчике.">
+              <img class="pagination__picture" src="images/ice-cream-caramel-marshmallow.png" width="312" height="507"
+                alt="Карамельный пломбир с маршмеллоу в вафильном стаканчике.">
               <button class="pagination__button-forward" type="button">
                 <span class="visually-hidden">
                   Вперед
                 </span>
               </button>
-              <div class="pagination__wrapper-thumb">
-                <img class=" pagination__thumb" src="images/ice-cream-strawberry-jam.png" width="66" height="150"
-                  alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
-                <img class="pagination__thumb" src="images/ice-cream-creamy-banan.png" width="66" height="150"
-                  alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
+              <div class="pagination__container-thumbs">
+                <div class="pagination__wrapper-thumb">
+                  <img class=" pagination__thumb" src="images/ice-cream-strawberry-jam.png" width="66" height="150"
+                    alt="Уменьшенное мороженое с клубничным джемом в вафильном стаканчике.">
+                </div>
+                <div class="pagination__wrapper-thumb">
+                  <img class="pagination__thumb" src="images/ice-cream-creamy-banan.png" width="66" height="150"
+                    alt="Уменьшенное сливочное мороженое со вкусом банана в вафильном стаканчике.">
+                </div>
               </div>
             </li>
           </ol>
@@ -208,108 +223,116 @@
         </div>
       </section>
       <section class="gift">
-        <h2 class="gift__title">Заказывайте мороженое и получайте подарки!</h2>
-        <div class="gift__raspberry raspberry">
-          <h3 class="raspberry__title">
-            Малинка даром!
-          </h3>
-          <p class="raspberry__description">
-            При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
-          </p>
-          <a class="raspberry__button" href="#">
-            Хочу подарок
-          </a>
-          <img class="raspberry__picture" src="images/raspberry-a-lot.png" width="219" height="268" alt="Россыпь малины из вафельного стаканчика.">
-        </div>
-        <div class="gift__marshmallow marshmallow">
-          <h3 class="marshmallow__title">
-            Маршмеллоу даром!
-          </h3>
-          <p class="marshmallow__description">
-            При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-          </p>
-          <a class="marshmallow__button" href="#">
-            Хочу подарок
-          </a>
-          <img class="marshmallow__picture" src="images/marshmallow-a-lot.png" width="219" height="268" alt="Россыпь маршмеллоу из вафельного стаканчика.">
-        </div>
+        <h2 class="gift__title title-section">Заказывайте мороженое и получайте подарки!</h2>
+        <ul class="gift__list">
+          <li class="gift__item">
+            <h3 class="gift__name">
+              Малинка даром!
+            </h3>
+            <p class="gift__description">
+              При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
+            </p>
+            <a class="gift__button button" href="#">
+              Хочу подарок
+            </a>
+            <img class="gift__picture" src="images/raspberry-a-lot.png" width="219" height="268"
+              alt="Россыпь малины из вафельного стаканчика.">
+          </li>
+          <li class="gift__item">
+            <h3 class="gift__name">
+              Маршмеллоу даром!
+            </h3>
+            <p class="gift__description">
+              При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
+            </p>
+            <a class="gift__button button" href="#">
+              Хочу подарок
+            </a>
+            <img class="gift__picture" src="images/marshmallow-a-lot.png" width="219" height="268"
+              alt="Россыпь маршмеллоу из вафельного стаканчика.">
+          </li>
+        </ul>
       </section>
       <section class="hit-ice-cream">
-        <h2 class="hit-ice-cream__title">
+        <h2 class="hit-ice-cream__title title-section">
           Попробуйте самые популярные вкусы нашего мороженого
         </h2>
-        <ul class="hit-ice-cream__list">
-          <li class="hit-ice-cream__item">
-            <a class="hit-ice-cream__link" href="#">
-              <img class="hit-ice-cream__picture" src="images/catalog/scoop-raspberry.png" width="168" height="168" alt="Шарик мороженого.">
-              <h3 class="hit-ice-cream__name">
+        <ul class="ice-cream__list hit-ice-cream__list">
+          <li class="ice-cream__item hit-ice-cream__item">
+            <a class="ice-cream__link" href="#">
+              <img class="ice-cream__picture" src="images/catalog/scoop-raspberry.png" width="168" height="168"
+                alt="Шарик мороженого.">
+              <h3 class="ice-cream__name">
                 Малинка
               </h3>
-              <p class="hit-ice-cream__description">
+              <p class="ice-cream__description">
                 Сливочное мороженое с малиновым джемом
               </p>
             </a>
-            <b class="hit-ice-cream__price">
+            <b class="ice-cream__price">
               310 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-button" href="#">
+            <a class="ice-cream__basket-button" href="#">
               <span class="visually-hidden">
                 Корзина
               </span>
             </a>
           </li>
-          <li class="hit-ice-cream__item">
-            <a class="hit-ice-cream__link" href="#">
-              <img class="hit-ice-cream__picture" src="images/catalog/scoop-pistachio.png" width="168" height="168" alt="Шарик мороженого.">
-              <h3 class="hit-ice-cream__name">
+          <li class="ice-cream__item hit-ice-cream__item">
+            <a class="ice-cream__link" href="#">
+              <img class="ice-cream__picture" src="images/catalog/scoop-pistachio.png" width="168" height="168"
+                alt="Шарик мороженого.">
+              <h3 class="ice-cream__name">
                 Фисташка
               </h3>
-              <p class="hit-ice-cream__description">
+              <p class="ice-cream__description">
                 Фисташковый пломбир с кусочками шоколада
               </p>
             </a>
-            <b class="hit-ice-cream__price">
+            <b class="ice-cream__price">
               340 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-button" href="#">
+            <a class="ice-cream__basket-button" href="#">
               <span class="visually-hidden">
                 Корзина
               </span>
             </a>
           </li>
-          <li class="hit-ice-cream__item">
-            <a class="hit-ice-cream__link" href="#">
-              <img class="hit-ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168" alt="Шарик мороженого.">
-              <h3 class="hit-ice-cream__description">
+          <li class="ice-cream__item hit-ice-cream__item">
+            <a class="ice-cream__link" href="#">
+              <img class="ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168"
+                alt="Шарик мороженого.">
+              <h3 class="ice-cream__name">
                 Черника
               </h3>
-              <p class="hit-ice-cream__name">
+              <p class="ice-cream__description">
                 Крем-брюле с черничным джемом
               </p>
             </a>
-            <b class="hit-ice-cream__price">
+            <b class="ice-cream__price">
               330 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-button" href="#">
+            <a class="ice-cream__basket-button" href="#">
               <span class="visually-hidden">
                 Корзина
               </span>
             </a>
           </li>
-          <li class="hit-ice-cream__item">
-            <a class="hit-ice-cream__link" href="#">
-              <img class="hit-ice-cream__picture" src="images/catalog/scoop-bubble-gum.png" width="168" height="168" alt="Шарик мороженого.">
-              <h3 class="hit-ice-cream__name">
+          <li class="ice-cream__item hit-ice-cream__item">
+            <a class="ice-cream__link" href="#">
+              <img class="ice-cream__picture" src="images/catalog/scoop-bubble-gum.png" width="168" height="168"
+                alt="Шарик мороженого.">
+              <h3 class="ice-cream__name">
                 Бабл-гам
               </h3>
-              <p class="hit-ice-cream__description">
+              <p class="ice-cream__description">
                 Ванильный пломбир со сладкой посыпкой
               </p>
             </a>
-            <b class="hit-ice-cream__price">
+            <b class="ice-cream__price">
               320 ₽/кг
             </b>
-            <a class="hit-ice-cream__basket-button" href="#">
+            <a class="ice-cream__basket-button" href="#">
               <span class="visually-hidden">
                 Корзина
               </span>
@@ -318,7 +341,7 @@
         </ul>
       </section>
       <section class="features">
-        <h2 class="features__title">
+        <h2 class="features__title title-section">
           Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на
           развес
         </h2>
@@ -375,14 +398,14 @@
             <label class="news__label" for="newsletter-email"></label>
             <input class="news__input" placeholder="email@example.com" type="email" name="newsletter-email"
               id="newsletter-email" required>
-            <button class="news__button send-button" type="submit">
+            <button class="news__button submit-button" type="submit">
               Отправить
             </button>
           </form>
         </section>
       </div>
       <section class="delivery">
-        <h2 class="delivery__title">
+        <h2 class="delivery__title title-section">
           Доставка любимого мороженого на дом
         </h2>
         <p class="delivery__description">
@@ -403,16 +426,16 @@
             <label class="delivery-form__label" for="tel">
               Телефон
             </label>
-            <input class="delivery__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
+            <input class="delivery-form__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
           </p>
           <p class="delivery-form__address">
-            <label class="delivery__label" for="address">
+            <label class="delivery-form__label" for="address">
               Адрес
             </label>
-            <input class="delivery__input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="address"
+            <input class="delivery-form__input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="address"
               id="address">
           </p>
-          <button class="delivery__button send-button" type="submit">
+          <button class="delivery-form__button submit-button" type="submit">
             Отправить
           </button>
         </form>
@@ -435,6 +458,9 @@
             <span class="address__timetable">
               (с 10 до 20 ежедневно)
             </span>
+            <a class="address__button feedback-button" href="#">
+              Форма обратной связи
+            </a>
           </div>
         </section>
       </div>
@@ -463,18 +489,26 @@
           </a>
         </li>
       </ul>
-      <ul class="usefull-info__list">
-        <li class="usefull__item">
-          Для поставщиков
+      <ul class="useful-info__list">
+        <li class="useful-info__item useful-info__item--bold">
+          <a class="useful-info__link" href="#">
+            Для поставщиков
+          </a>
         </li>
-        <li class="usefull-info__item">
+        <li class="useful-info__item">
+          <a class="useful-info__link" href="#">
           Наши документы
+        </a>
         </li>
-        <li class="usefull-info__item">
+        <li class="useful-info__item">
+          <a class="useful-info__link" href="#">
           О производстве
+        </a>
         </li>
-        <li class="usefull-info__item">
+        <li class="useful-info__item">
+          <a class="useful-info__link" href="#">
           Экологические стандарты
+        </a>
         </li>
       </ul>
       <div class="footer__htmlacademy">
@@ -483,9 +517,9 @@
             Логотип HTML Academy
           </span>
         </a>
-        <p class="footer__made-in">
+        <small class="footer__made-in">
           Сделано в <a class="footer__made-in-link" href="https://htmlacademy.ru/">.html academy</a> © 2021
-        </p>
+        </small>
       </div>
     </footer>
   </body>
