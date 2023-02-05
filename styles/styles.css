@@ -23,12 +23,26 @@
   font-display: swap;
 }
 
-body {
-  font-family: "Inter", sans-serif;
+html {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
   background-color: #feafc3;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .button {
@@ -48,14 +62,53 @@ body {
   background-color: #ff2f64;
 }
 
+.header {
+  display: flex;
+  width: 1170px;
+}
+
+.header__logo {
+  display: block;
+  margin-right: 16px;
+}
+
 .header__nav {
   line-height: 20px;
   color: #2d3440;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1017px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 422px;
+  list-style-type: none;
+}
+
+.nav__user-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 267px;
+  list-style-type: none;
+}
+
 .nav__link,
 .nav-catalog__link,
-.nav-user__link,
+.nav__user-link,
 .nav__link-tel {
   line-height: 20px;
   text-decoration: none;
@@ -63,7 +116,7 @@ body {
 }
 
 .nav-catalog__link,
-.nav-user__link {
+.nav__user-link {
   font-size: 14px;
 }
 
@@ -72,8 +125,21 @@ body {
   font-weight: 700;
 }
 
+.nav__link-tel {
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.title-section {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+}
+
 .pagination__item {
   color: #2d3440;
+  display: flex;
 }
 
 .pagination__title {
@@ -87,7 +153,12 @@ body {
   line-height: 24px;
 }
 
-.title-section {
+.pagination__picture-container {
+  display: flex;
+  width: 630px;
+}
+
+.gift__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -137,7 +208,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.blog_preview {
+.blog__preview {
   line-height: 20px;
 }
 
@@ -181,7 +252,7 @@ body {
   color: #b9b9b9;
 }
 
-.address__container {
+.address-container {
   background-color: #e7e7e7;
   background-image: url("../images/three-ice-creams-background.jpg");
   background-repeat: no-repeat;
@@ -267,7 +338,7 @@ body {
 
 .sort__select {
   background-color: rgba(252, 252, 252, 0.3);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -290,7 +361,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.pagination__button-show-more {
+.selection__padination-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
