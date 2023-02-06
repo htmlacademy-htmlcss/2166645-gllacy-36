@@ -223,8 +223,11 @@ html {
   text-align: center;
 }
 
-.hit-ice-cream__list {
+/*переделаю на гриды*/
+.hit-ice-cream__list,
+.ice-cream {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
@@ -433,6 +436,19 @@ html {
 }
 
 /* catalog */
+
+.header-inner__breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  margin-right: 8px;
+  padding-right: 20px;
+}
+
 .breadcrumbs__link {
   font-weight: 700;
   font-size: 14px;
@@ -455,6 +471,16 @@ html {
   color: #2d3440;
 }
 
+.selection__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 823px;
+}
+
+.form__sort {
+  margin-right: 24px;
+}
+
 .sort__select {
   background-color: rgba(252, 252, 252, 0.3);
   font-family: "Inter", "Helvetica", sans-serif;
@@ -464,12 +490,28 @@ html {
   color: #2d3440;
 }
 
+.form__price {
+  margin-right: 24px;
+}
+
 .fatness__list {
   background-color: rgba(252, 252, 252, 0.3);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__fillers {
+  margin-right: 16px;
 }
 
 .fillers__list {
   background-color: rgba(252, 252, 252, 0.3);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .form__button {
@@ -480,6 +522,13 @@ html {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+.selection__pagination-container {
+  display: flex;
+  justify-content: space-between;
+  width: 682px;
+  margin-left: auto;
+}
+
 .selection__pagination-button {
   font-weight: 700;
   font-size: 16px;
@@ -487,6 +536,11 @@ html {
   color: #2d3440;
   text-decoration: none;
   background-color: #fcfcfc;
+}
+
+.selection__pagination-list {
+  display: flex;
+  list-style-type: none;
 }
 
 .pagination__link {

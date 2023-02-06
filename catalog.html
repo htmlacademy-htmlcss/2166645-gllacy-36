@@ -118,6 +118,9 @@
                 <option value="select-name">по названию</option>
               </select>
             </fieldset>
+            <fieldset class="form__price price">
+              <legend class="price__legend">Цена: 100 ₽ – 500 ₽</legend>
+            </fieldset>
             <fieldset class="form__fatness fatness">
               <legend class="fatness__legend">
                 Жирность:
@@ -432,34 +435,36 @@
               </a>
             </li>
           </ul>
-          <a class="selection__pagination-button" href="#">Показать ещё</a>
-          <ul class="selection__pagination-list pagination">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--prev pagination__link--disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--current">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
+          <div class="selection__pagination-container">
+            <a class="selection__pagination-button" href="#">Показать ещё</a>
+            <ul class="selection__pagination-list pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--prev pagination__link--disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">5</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
       <footer class="footer">
