@@ -23,12 +23,39 @@
   font-display: swap;
 }
 
-body {
-  font-family: "Inter", sans-serif;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
   background-color: #feafc3;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .button {
@@ -48,14 +75,53 @@ body {
   background-color: #ff2f64;
 }
 
+.header {
+  display: flex;
+  width: 1170px;
+}
+
+.header__logo {
+  display: block;
+  margin-right: 16px;
+}
+
 .header__nav {
   line-height: 20px;
   color: #2d3440;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1017px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 422px;
+  list-style-type: none;
+}
+
+.nav__user-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 267px;
+  list-style-type: none;
+}
+
 .nav__link,
 .nav-catalog__link,
-.nav-user__link,
+.nav__user-link,
 .nav__link-tel {
   line-height: 20px;
   text-decoration: none;
@@ -63,7 +129,7 @@ body {
 }
 
 .nav-catalog__link,
-.nav-user__link {
+.nav__user-link {
   font-size: 14px;
 }
 
@@ -72,19 +138,9 @@ body {
   font-weight: 700;
 }
 
-.pagination__item {
-  color: #2d3440;
-}
-
-.pagination__title {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-}
-
-.pagination__description {
-  font-size: 18px;
-  line-height: 24px;
+.nav__link-tel {
+  margin-left: auto;
+  margin-right: 16px;
 }
 
 .title-section {
@@ -94,9 +150,65 @@ body {
   color: #2d3440;
 }
 
+.slider__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__item {
+  color: #2d3440;
+  display: flex;
+}
+
+.slider__description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider__picture-container {
+  display: flex;
+  width: 630px;
+}
+
+.slider__social-list {
+  margin-left: auto;
+}
+
+.social {
+  display: flex;
+  min-width: 104px;
+  list-style-type: none;
+  outline-style: solid;
+  outline-color: #00f7ffee;
+}
+
+.gift__title {
+  width: 434px;
+  margin: auto;
+  text-align: center;
+}
+
+.gift__list {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .gift__item {
   color: #2d3440;
   background-color: #ff7799;
+  display: flex;
+  width: 534px;
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+  border-radius: 10px;
+}
+
+.gift__descriptopn-container {
+  width: 317px;
 }
 
 .gift__name {
@@ -105,9 +217,30 @@ body {
   line-height: 30px;
 }
 
+.hit-ice-cream__title {
+  width: 527px;
+  margin: auto;
+  text-align: center;
+}
+
+/*переделаю на гриды*/
+.hit-ice-cream__list,
+.ice-cream {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .ice-cream__item {
   background-color: #fcfcfc;
-}
+  width: 190px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  }
 
 .ice-cream__link {
   text-decoration: none;
@@ -131,13 +264,35 @@ body {
   color: #2d3440;
 }
 
+.features {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-right: 39px;
+}
+
+.features__title {
+  text-align: center;
+}
+
+.blog-news-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .blog {
   background-color: #ffffff;
   background-image: url("../images/ice-cream-raspberry-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60px -95px;
+  width: 506px;
+  border-radius: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.blog_preview {
+.blog__preview {
   line-height: 20px;
 }
 
@@ -151,6 +306,10 @@ body {
 
 .news {
   background-color: #ffffff;
+  width: 518px;
+  border-radius: 10px;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
 .news__input::placeholder {
@@ -163,10 +322,22 @@ body {
   background-color: #e7e7e7;
   background-image: url("../images/ice-cream-fruits-background.jpg");
   background-repeat: no-repeat;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 64px;
+  border-radius: 10px;
+}
+
+.delivery__text-container {
+  width: 380px;
+  margin-right: 126px;
 }
 
 .delivery-form {
   background-color: #fcfcfc;
+  width: 420px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .delivery-form__label {
@@ -181,13 +352,22 @@ body {
   color: #b9b9b9;
 }
 
-.address__container {
+.address-container {
   background-color: #e7e7e7;
   background-image: url("../images/three-ice-creams-background.jpg");
   background-repeat: no-repeat;
+  padding: 64px 763px 64px 64px;
+  border-radius: 10px;
 }
 
-.address__titile {
+.address-container__section {
+  background-color: #fcfcfc;
+  width: 263px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.address__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -218,6 +398,12 @@ body {
   text-decoration: none;
 }
 
+.footer {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+}
+
 .useful-info__link {
   font-size: 14px;
   line-height: 20px;
@@ -227,6 +413,13 @@ body {
 
 .useful-info__item--bold {
   font-weight: 700;
+}
+
+.footer__htmlacademy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 193px;
 }
 
 .footer__made-in {
@@ -243,6 +436,19 @@ body {
 }
 
 /* catalog */
+
+.header-inner__breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  margin-right: 8px;
+  padding-right: 20px;
+}
+
 .breadcrumbs__link {
   font-weight: 700;
   font-size: 14px;
@@ -265,21 +471,47 @@ body {
   color: #2d3440;
 }
 
+.selection__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 823px;
+}
+
+.form__sort {
+  margin-right: 24px;
+}
+
 .sort__select {
   background-color: rgba(252, 252, 252, 0.3);
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
 }
 
+.form__price {
+  margin-right: 24px;
+}
+
 .fatness__list {
   background-color: rgba(252, 252, 252, 0.3);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__fillers {
+  margin-right: 16px;
 }
 
 .fillers__list {
   background-color: rgba(252, 252, 252, 0.3);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .form__button {
@@ -290,13 +522,25 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.pagination__button-show-more {
+.selection__pagination-container {
+  display: flex;
+  justify-content: space-between;
+  width: 682px;
+  margin-left: auto;
+}
+
+.selection__pagination-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
   background-color: #fcfcfc;
+}
+
+.selection__pagination-list {
+  display: flex;
+  list-style-type: none;
 }
 
 .pagination__link {
