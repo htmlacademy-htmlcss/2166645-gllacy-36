@@ -78,11 +78,25 @@ html {
 .header {
   display: flex;
   width: 1170px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  outline-style: solid;
+  outline-color: #00f7ffee;
 }
 
 .header__logo {
   display: block;
+  padding: 0;
+  margin: 0;
   margin-right: 16px;
+  outline-style: solid;
+  outline-color: #00f7ffee;
+}
+
+.header__logo-icon {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .header__nav {
@@ -94,22 +108,68 @@ html {
   display: flex;
   justify-content: space-between;
   width: 1017px;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
 }
 
 .nav__list {
-  margin: 0;
-  padding: 0;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   width: 422px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline-style: solid;
+  outline-color: #720ef5ee;
+}
+
+.nav__link {
+  display: block;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+  padding: 8px 16px;
+  outline-style: solid;
+  outline-color: #00f7ffee;
+}
+
+.nav-catalog {
+  width: 85px;
+  padding: 8px 16px;
+ }
+
+.nav-catalog__list {
+  display: none;
   list-style-type: none;
 }
 
+/*.nav-catalog:active .nav-catalog__list {
+  display: block;
+}*/
+
+.nav-catalog__link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.nav-catalog__link--new {
+  font-weight: 700;
+}
+
+.nav__link-tel {
+  line-height: 20px;
+  text-decoration: none;
+  color: #2d3440;
+  font-weight: 700;
+  display: block;
+  padding: 0;
+  margin: auto 16px auto auto;
+}
+
 .nav__user-list {
-  margin: 0;
+  margin: auto 0;
   padding: 0;
   text-align: center;
   display: flex;
@@ -119,28 +179,37 @@ html {
   list-style-type: none;
 }
 
-.nav__link,
-.nav-catalog__link,
-.nav__user-link,
-.nav__link-tel {
+.nav__user-item {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline-style: solid;
+  outline-color: #00f7ffee;
+}
+
+.nav__user-link {
+  font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-catalog__link,
-.nav__user-link {
-  font-size: 14px;
+.nav__user-link--search {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  outline-style: solid;
+  outline-color: #00f7ffee;
 }
 
-.nav__link-tel,
-.nav-catalog__link--new {
-  font-weight: 700;
-}
-
-.nav__link-tel {
-  margin-left: auto;
-  margin-right: 16px;
+.nav__user-link--text {
+  padding-top: 6px;
+  padding-right: 16px;
+  padding-bottom: 6px;
+  padding-left: 17px;
 }
 
 .title-section {
