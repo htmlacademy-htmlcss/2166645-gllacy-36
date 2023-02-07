@@ -64,6 +64,9 @@ html {
   color: #2d3440;
   text-decoration: none;
   background-color: #fcfcfc;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 2em;
 }
 
 .submit-button,
@@ -123,6 +126,11 @@ html {
   outline-color: #720ef5ee;
 }
 
+.nav__item {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .nav__link {
   display: block;
   line-height: 20px;
@@ -136,7 +144,7 @@ html {
 .nav-catalog {
   width: 85px;
   padding: 8px 16px;
- }
+}
 
 .nav-catalog__list {
   display: none;
@@ -171,10 +179,9 @@ html {
 .nav__user-list {
   margin: auto 0;
   padding: 0;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 267px;
   list-style-type: none;
 }
@@ -182,10 +189,18 @@ html {
 .nav__user-item {
   padding: 0;
   margin: 0;
+  margin-right: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: rgba(252, 252, 252, 0.3);
   outline-style: solid;
   outline-color: #00f7ffee;
 }
+
+.nav__user-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 .nav__user-link {
   font-size: 14px;
@@ -251,10 +266,16 @@ html {
   outline-color: #00f7ffee;
 }
 
+.gift {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 41px;
+}
+
 .gift__title {
   width: 434px;
-  margin: auto;
   text-align: center;
+  margin: 0 auto 55px auto;
 }
 
 .gift__list {
@@ -278,41 +299,86 @@ html {
 
 .gift__descriptopn-container {
   width: 317px;
+  margin: auto 0;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .gift__name {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.gift__description {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.gift__picture {
+  display: block;
+  margin: auto 0;
+  padding: 0;
+}
+
+.hit-ice-cream {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .hit-ice-cream__title {
   width: 527px;
   margin: auto;
+  margin-bottom: 46px;
   text-align: center;
 }
 
-/*переделаю на гриды*/
-.hit-ice-cream__list,
 .ice-cream {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
 .ice-cream__item {
-  background-color: #fcfcfc;
+  /*background-color: #fcfcfc;
+  border-radius: 10px;*/
+  position: relative;
   width: 190px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 10px 40px 24px;
+}
+
+.ice-cream__item::before {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 281px;
+  background-color: #fcfcfc;
   border-radius: 10px;
-  }
+  z-index: -1;
+  left: 0;
+  top: 61px;
+}
+
 
 .ice-cream__link {
   text-decoration: none;
+}
+
+.ice-cream__picture-wrapper {
+  margin: 0 auto;
+}
+
+.ice-cream__picture {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 16px;
 }
 
 .ice-cream__name {
@@ -320,10 +386,24 @@ html {
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .ice-cream__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
   color: #565c66;
+  margin-bottom: 16px;
+}
+
+.ice-cream__price-basket-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ice-cream__price {
@@ -333,15 +413,69 @@ html {
   color: #2d3440;
 }
 
+.ice-cream__icon {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #fcfcfc;
+  border-radius: 50%;
+}
+
+.ice-cream__icon rect {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #FF2F64;
+}
+
+.ice-cream__icon:hover {
+  color: #000000;
+  outline: 2px solid #ff2f64;
+  outline-offset: -2px;
+}
+
+.ice-cream__icon:hover rect {
+  color: rgba(252, 252, 252, 0.3);
+}
+
 .features {
+  background-image: url("../images/waffle-background.jpg");
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+.features__container {
   background-color: #ffffff;
   border-radius: 10px;
-  padding-left: 40px;
-  padding-right: 39px;
+  padding: 56px 40px;
 }
 
 .features__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 56px;
   text-align: center;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(2, 506px);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  row-gap: 40px;
+  column-gap: 32px;
+}
+
+.features__item {
+  padding: 0;
+  margin: 0;
+}
+
+.features__description {
+  padding: 0;
+  margin: 0;
 }
 
 .blog-news-container {
