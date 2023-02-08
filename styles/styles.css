@@ -692,6 +692,8 @@ html {
   background-color: #e7e7e7;
   background-image: url("../images/three-ice-creams-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -80px;
   padding: 64px 763px 64px 64px;
   border-radius: 10px;
 }
@@ -699,14 +701,17 @@ html {
 .address-container__section {
   background-color: #fcfcfc;
   width: 263px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .address__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  width: 180px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .address__address {
@@ -715,23 +720,37 @@ html {
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
+  margin-bottom: 24px;
+}
+
+.address__text {
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .address__tel {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .address__timetable {
   font-size: 14px;
   line-height: 20px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .address__button {
   text-decoration: none;
+  margin-bottom: 2px;
 }
 
 .footer {
