@@ -410,29 +410,39 @@
             </h2>
             <ul class="features__list">
               <li class="features__item">
+                <div class="features__icon-container">
+                  <img class="features__icon" width="16" height="32" src="images/ice-cream-icon.svg" alt="Мороженое.">
+                </div>
                 <p class="features__description">Всё наше мороженое изготавливается на собственном производстве с
-                  использованием современного
-                  оборудования и проверенных временем технологий.
+                  использованием современного оборудования и проверенных временем технологий.
                 </p>
               </li>
               <li class="features__item">
+                <div class="features__icon-container">
+                  <img class="features__icon" width="32" height="32" src="images/cow-icon.svg" alt="Голова коровы.">
+                </div>
                 <p class="features__description">
-                  Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает
+                  Закупка ингредиентов производится только <br> у проверенных фермерских хозяйств, с которыми нас
+                  связывает
                   долговременное сотрудничество.
                 </p>
               </li>
               <li class="features__item">
+                <div class="features__icon-container">
+                  <img class="features__icon" width="19" height="32" src="images/leaf-icon.svg" alt="Листик растения.">
+                </div>
                 <p class="features__description">
-                  Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и
-                  добавки
-                  произведены из натурального сырья.
+                  Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты <br> и
+                  добавки произведены из натурального сырья.
                 </p>
               </li>
               <li class="features__item">
+                <div class="features__icon-container">
+                  <img class="features__icon" width="19" height="32" src="images/temprature-icon.svg" alt="Градусник.">
+                </div>
                 <p class="features__description">
                   Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять
-                  и
-                  позволяет сохранить превосходный вкус.
+                  и позволяет сохранить превосходный вкус.
                 </p>
               </li>
             </ul>
@@ -446,7 +456,7 @@
             <p class="blog__preview">
               Новое в нашем блоге
             </p>
-            <h3 class="blog__title title-section">
+            <h3 class="blog__title">
               <a class="blog__link" href="#">
                 10 способов сервировки фруктовых щербетов к столу
               </a>
@@ -456,18 +466,25 @@
             <h2 class="visually-hidden">
               Рассылка новостей
             </h2>
-            <p class="news__description">
-              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="news-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="news__label" for="newsletter-email"></label>
-              <input class="news__input" placeholder="email@example.com" type="email" name="newsletter-email"
-                id="newsletter-email" required>
-              <button class="news__button submit-button" type="submit">
-                Отправить
-              </button>
-            </form>
+            <div class="news__container">
+              <p class="news__description">
+                Подпишитесь на нашу сладкую рассылку и будьте всегда <br> в курсе всего самого вкусного, что у нас
+                происходит.
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="news-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="news__label">
+                  <span class="visually-hidden">
+                    Электронная почта
+                  </span>
+                  <input class="news__input" placeholder="email@example.com" type="email" name="newsletter-email"
+                    id="newsletter-email" required>
+                </label>
+                <button class="news__button submit-button" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
           </section>
         </div>
         <section class="delivery">
@@ -476,7 +493,8 @@
               Доставка любимого мороженого на дом
             </h2>
             <p class="delivery__description">
-              Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на
+              Хочется полакомиться любимым десертом, <br> но нет времени съездить в магазин? Закажите доставку
+              мороженого на
               дом, и курьер привезёт вам ваш заказ в течение часа!
             </p>
           </div>
@@ -484,25 +502,27 @@
             <p class="delivery-form__action">
               Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
             </p>
-            <p class="delivery-form__name">
-              <label class="delivery-form__label" for="name">
-                Дата
-              </label>
-              <input class="delivery-form__input" type="text" name="name" id="name" placeholder="01.04.2020">
-            </p>
-            <p class="delivery-form__tel">
-              <label class="delivery-form__label" for="tel">
-                Телефон
-              </label>
-              <input class="delivery-form__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
-            </p>
-            <p class="delivery-form__address">
-              <label class="delivery-form__label" for="address">
-                Адрес
-              </label>
-              <input class="delivery-form__input" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="address"
-                id="address">
-            </p>
+            <ul class="delivery-form__list">
+              <li class="delivery-form__item">
+                <label class="delivery-form__label" for="name">
+                  Дата
+                </label>
+                <input class="delivery-form__input" type="text" name="name" id="name" placeholder="01.04.2020">
+              </li>
+              <li class="delivery-form__item">
+                <label class="delivery-form__label" for="tel">
+                  Телефон
+                </label>
+                <input class="delivery-form__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
+              </li>
+              <li class="delivery-form__item delivery-form__item--address">
+                <label class="delivery-form__label" for="address">
+                  Адрес
+                </label>
+                <input class="delivery-form__input" placeholder="ул. Большая Конюшенная, 19/8" type="text"
+                  name="address" id="address">
+              </li>
+            </ul>
             <button class="delivery-form__button submit-button" type="submit">
               Отправить
             </button>

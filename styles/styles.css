@@ -76,6 +76,10 @@ html {
   line-height: 20px;
   color: #fcfcfc;
   background-color: #ff2f64;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 2em;
+  border: none;
 }
 
 .header {
@@ -365,7 +369,6 @@ html {
   top: 61px;
 }
 
-
 .ice-cream__link {
   text-decoration: none;
 }
@@ -439,6 +442,7 @@ html {
 }
 
 .features {
+  background-color: #f3ae0083;
   background-image: url("../images/waffle-background.jpg");
   padding: 24px;
   border-radius: 10px;
@@ -469,34 +473,62 @@ html {
 }
 
 .features__item {
+  display: flex;
   padding: 0;
   margin: 0;
+}
+
+.features__icon-container {
+  display: flex;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.features__icon {
+  display: block;
+  padding: 0;
+  margin: auto;
 }
 
 .features__description {
   padding: 0;
   margin: 0;
+  width: 442px;
 }
 
 .blog-news-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .blog {
   background-color: #ffffff;
   background-image: url("../images/ice-cream-raspberry-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60px -95px;
+  background-size: 115%;
+  background-position: -10px -110px;
   width: 506px;
   border-radius: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 33px 32px;
+
 }
 
 .blog__preview {
   line-height: 20px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.blog__title {
+  padding: 0;
+  margin: 0;
+  width: 303px;
+  margin-bottom: 36px;
 }
 
 .blog__link {
@@ -505,14 +537,50 @@ html {
   line-height: 30px;
   color: #2d3440;
   text-decoration: none;
+  padding: 65px 0;
 }
 
 .news {
   background-color: #ffffff;
-  width: 518px;
+  background-image: url("../images/letter-background.jpg");
+  background-size: 110%;
+  width: 558px;
   border-radius: 10px;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding: 6px;
+}
+
+.news__container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 26px;
+}
+
+.news__description {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 44px;
+}
+
+.news__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__label {
+  padding: 0;
+  margin: 0;
+  margin-right: 18px;
+}
+
+.news__input {
+  font-size: 16px;
+  line-height: 20px;
+  color:#2D3440;
+  margin: 0;
+  padding: 14px 15px;
+  width: 300px;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
 }
 
 .news__input::placeholder {
@@ -521,11 +589,19 @@ html {
   color: #b9b9b9;
 }
 
+.news__button {
+  margin-top: 2px;
+}
+
 .delivery {
   background-color: #e7e7e7;
   background-image: url("../images/ice-cream-fruits-background.jpg");
   background-repeat: no-repeat;
+  background-size: 103%;
+  background-position: 0 -130px;
   display: flex;
+  margin-bottom: 80px;
+  padding: 64px 64px 64px 100px;
   padding-left: 100px;
   padding-right: 64px;
   border-radius: 10px;
@@ -533,26 +609,83 @@ html {
 
 .delivery__text-container {
   width: 380px;
+  margin-top: 103px;
   margin-right: 126px;
 }
 
+.delivery__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.delivery__description {
+  width: 371px;
+  padding: 0;
+  margin: 0;
+}
+
 .delivery-form {
+  display: flex;
+  flex-direction: column;
   background-color: #fcfcfc;
   width: 420px;
-  padding-left: 40px;
+  min-height: 326px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.delivery-form__action {
+  padding: 0;
   padding-right: 40px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+ .delivery-form__list {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
+  row-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.delivery-form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form__item--address {
+  grid-column: 1 / -1;
 }
 
 .delivery-form__label {
   font-weight: 700;
   line-height: 20px;
   color: #2d3440;
+  margin-bottom: 8px;
+}
+
+.delivery-form__input {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  padding: 14px 16px;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
 }
 
 .delivery-form__input::placeholder {
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
+}
+
+.delivery-form__button {
+  margin: 0 auto;
 }
 
 .address-container {
