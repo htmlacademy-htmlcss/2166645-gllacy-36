@@ -87,8 +87,6 @@ html {
   width: 1170px;
   padding-top: 24px;
   padding-bottom: 24px;
-  outline-style: solid;
-  outline-color: #00f7ffee;
 }
 
 .header__logo {
@@ -96,8 +94,6 @@ html {
   padding: 0;
   margin: 0;
   margin-right: 16px;
-  outline-style: solid;
-  outline-color: #00f7ffee;
 }
 
 .header__logo-icon {
@@ -109,12 +105,12 @@ html {
 .header__nav {
   line-height: 20px;
   color: #2d3440;
+  flex-grow: 1;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 1017px;
   margin: auto 0;
   padding: 0;
 }
@@ -126,8 +122,8 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  outline-style: solid;
-  outline-color: #720ef5ee;
+/*  outline-style: solid;
+  outline-color: #720ef5ee;*/
 }
 
 .nav__item {
@@ -136,28 +132,30 @@ html {
 }
 
 .nav__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
   padding: 8px 16px;
-  outline-style: solid;
-  outline-color: #00f7ffee;
+  border-radius: 20px;
 }
 
-.nav-catalog {
+.nav__link--catalog {
   width: 85px;
-  padding: 8px 16px;
 }
 
+.nav__link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.nav__icon {
+  align-self: center;
+}
 .nav-catalog__list {
   display: none;
   list-style-type: none;
 }
-
-/*.nav-catalog:active .nav-catalog__list {
-  display: block;
-}*/
 
 .nav-catalog__link {
   font-size: 14px;
@@ -191,44 +189,50 @@ html {
 }
 
 .nav__user-item {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-right: 16px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: rgba(252, 252, 252, 0.3);
-  outline-style: solid;
-  outline-color: #00f7ffee;
 }
 
 .nav__user-item:nth-child(3n) {
   margin-right: 0;
 }
 
-
 .nav__user-link {
+  display: flex;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
-  display: block;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+}
+
+.nav__user-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .nav__user-link--search {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  outline-style: solid;
-  outline-color: #00f7ffee;
+  justify-content: center;
 }
 
 .nav__user-link--text {
-  padding-top: 6px;
-  padding-right: 16px;
-  padding-bottom: 6px;
-  padding-left: 17px;
+  display: flex;
+  padding: 6px 16px;
+}
+
+.nav__user-icon {
+  align-self: center;
+}
+
+.nav__user-icon--text {
+  margin-right: 6px;
 }
 
 .title-section {
@@ -265,6 +269,7 @@ html {
 .social {
   display: flex;
   min-width: 104px;
+  justify-content: space-between;
   list-style-type: none;
   outline-style: solid;
   outline-color: #00f7ffee;
@@ -757,6 +762,43 @@ html {
   display: flex;
   width: 1170px;
   justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer__social-list {
+  padding: 0;
+  margin: 0;
+}
+
+.social__icon {
+  border-radius: 50%;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.social__icon path {
+  color: #fcfcfc;
+}
+
+/*надо подумать , как убрать заливку с рамки*/
+.social__icon:hover {
+  background-color: #2d3440;
+}
+
+.useful-info {
+  display: grid;
+  grid-template-columns: 150px 205px;
+  column-gap: 1px;
+  row-gap: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.useful-info__item {
+  padding: 0;
+  margin: 0;
+  padding-left: 23px;
 }
 
 .useful-info__link {
@@ -767,7 +809,19 @@ html {
 }
 
 .useful-info__item--bold {
+  position: relative;
   font-weight: 700;
+}
+
+.useful-info__item--bold::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 12px;
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  top: 4px;
+  left: 0;
 }
 
 .footer__htmlacademy {
@@ -775,6 +829,14 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 193px;
+}
+
+.footer__logo-text:hover {
+  opacity: 0.7;
+}
+
+.footer__logo-text:active {
+  opacity: 0.3;
 }
 
 .footer__made-in {
@@ -788,6 +850,15 @@ html {
   color: inherit;
   font-size: inherit;
   line-height: inherit;
+  border-bottom: 1px solid rgba(45, 52, 64, 0.5);
+}
+
+.footer__made-in-link:hover {
+  opacity: 0.7;
+}
+
+.footer__made-in-link:active {
+  opacity: 0.3;
 }
 
 /* catalog */
