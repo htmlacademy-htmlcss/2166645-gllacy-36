@@ -16,8 +16,16 @@
         </a>
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item nav-catalog">
-              Каталог
+            <li class="nav__item">
+              <a class="nav__link nav__link--catalog" href="#">
+                <span class="nav__name">Каталог</span>
+                <svg class="nav__icon" width="16" height="17" aria-hidden="true" focusable="false" viewBox="0 0 16 17"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z"
+                    fill="currentColor" />
+                </svg>
+              </a>
               <ul class="nav-catalog__list">
                 <li class="nav-catalog__item nav-catalog__item--new">
                   <a class="nav-catalog__link nav-catalog__link--new" href="#">
@@ -62,21 +70,41 @@
           </a>
           <ul class="nav__user-list">
             <li class="nav__user-item">
-              <a class="nav__user-link" href="#">
+              <a class="nav__user-link nav__user-link--search" href="#">
                 <span class="visually-hidden">
                   Найти
                 </span>
+                <svg class="nav__user-icon" width="14" height="14" aria-hidden="true" focusable="false"
+                  viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
+                    fill="currentColor" />
+                </svg>
               </a>
             </li>
             <li class="nav__user-item">
-              <a class="nav__user-link" href="#">Вход</a>
+              <a class="nav__user-link nav__user-link--text" href="#">
+                <svg class="nav__user-icon nav__user-icon--text" width="14" height="14" aria-hidden="true"
+                  focusable="false" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 .67C8 .3 8.3 0 8.67 0h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H8.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V2a.67.67 0 0 0-.67-.67H8.67A.67.67 0 0 1 8 .67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.67.67 0 0 1 .2.48.66.66 0 0 1-.2.47L5.8 10.47a.67.67 0 1 1-.94-.94l2.2-2.2H.66A.67.67 0 1 1 .67 6h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="nav__user-text">Вход</span>
+              </a>
             </li>
             <li class="nav__user-item">
-              <a class="nav__user-link" href="#">
+              <a class="nav__user-link nav__user-link--text" href="#">
+                <svg class="nav__user-icon nav__user-icon--text" width="15" height="14" aria-hidden="true"
+                  focusable="false" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.17.25a.67.67 0 1 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V8.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 12.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    fill="currentColor" />
+                </svg>
                 <span class="visually-hidden">
                   Корзина
                 </span>
-                2 Товара
+                <span class="nav__user-text">2 Товара</span>
               </a>
             </li>
           </ul>
