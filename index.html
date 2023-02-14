@@ -17,7 +17,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--catalog" href="catalog.html">
+              <a class="nav__link nav__link--catalog nav__link--catalog-open" href="creamy-ice-cream.html">
                 <span class="nav__name">Каталог</span>
                 <svg class="nav__icon" width="16" height="17" aria-hidden="true" focusable="false" viewBox="0 0 16 17"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@
           </a>
           <ul class="nav__user-list">
             <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--search" href="#">
+              <a class="nav__user-link nav__user-link--search nav__user-link--open" href="#">
                 <span class="visually-hidden">
                   Найти
                 </span>
@@ -83,7 +83,7 @@
               </a>
             </li>
             <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--text" href="#">
+              <a class="nav__user-link nav__user-link--text nav__user-link--open" href="#">
                 <svg class="nav__user-icon nav__user-icon--text" width="14" height="14" aria-hidden="true"
                   focusable="false" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -94,7 +94,7 @@
               </a>
             </li>
             <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--text" href="#">
+              <a class="nav__user-link nav__user-link--text nav__user-link--open" href="#">
                 <svg class="nav__user-icon nav__user-icon--text" width="15" height="14" aria-hidden="true"
                   focusable="false" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -127,16 +127,15 @@
                   </h3>
                   <p class="slider__description">
                     Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный
-                    десерт
-                    для всей семьи.
+                    десерт для всей семьи.
                   </p>
-                  <a class="slider__order-button button" href="#">
+                  <a class="slider__order-button button button-loading" href="#">
                     Заказать
                   </a>
                 </div>
                 <div class="slider__picture-container">
                   <div class="slider__main-picture-wrapper">
-                    <button class="slider__button slider__button--back" type="button">
+                    <button class="slider__button slider__button--back slider__button--disabled" type="button">
                       <span class="visually-hidden">
                         Назад
                       </span>
@@ -149,7 +148,7 @@
                     </button>
                     <img class="slider__picture" src="images/ice-cream-strawberry-jam.png" width="327" height="507"
                       alt="Мороженое с клубничным джемом в вафильном стаканчике.">
-                    <button class="slider__button slider__button--forward" type="button">
+                    <button class="slider__button slider__button--forward slider__button--disabled" type="button">
                       <span class="visually-hidden">
                         Вперед
                       </span>
@@ -243,13 +242,13 @@
                     летний
                     день.
                   </p>
-                  <a class="slider__order-button button" href="#">
+                  <a class="slider__order-button button button-loading" href="#">
                     Заказать
                   </a>
                 </div>
                 <div class="slider__picture-container">
                   <div class="slider__main-picture-wrapper slider__main-picture-wrapper--blue">
-                    <button class="slider__button slider__button--back" type="button">
+                    <button class="slider__button slider__button--back slider__button--disabled" type="button">
                       <span class="visually-hidden">
                         Назад
                       </span>
@@ -262,7 +261,7 @@
                     </button>
                     <img class="slider__picture" src="images/ice-cream-creamy-banan.png" width="312" height="507"
                       alt="Сливочное мороженое со вкусом банана в вафильном стаканчике.">
-                    <button class="slider__button slider__button--forward" type="button">
+                    <button class="slider__button slider__button--forward slider__button--disabled" type="button">
                       <span class="visually-hidden">
                         Вперед
                       </span>
@@ -355,13 +354,13 @@
                     Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
                     возрастов.
                   </p>
-                  <a class="slider__order-button button" href="#">
+                  <a class="slider__order-button button button-loading" href="#">
                     Заказать
                   </a>
                 </div>
                 <div class="slider__picture-container">
                   <div class="slider__main-picture-wrapper slider__main-picture-wrapper--orange">
-                    <button class="slider__button slider__button--back" type="button">
+                    <button class="slider__button slider__button--back slider__button--disabled" type="button">
                       <span class="visually-hidden">
                         Назад
                       </span>
@@ -374,7 +373,7 @@
                     </button>
                     <img class="slider__picture" src="images/ice-cream-caramel-marshmallow.png" width="312" height="507"
                       alt="Карамельный пломбир с маршмеллоу в вафильном стаканчике.">
-                    <button class="slider__button slider__button--forward" type="button">
+                    <button class="slider__button slider__button--forward slider__button--disabled" type="button">
                       <span class="visually-hidden">
                         Вперед
                       </span>
@@ -470,7 +469,7 @@
                 <p class="gift__description">
                   При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
                 </p>
-                <a class="gift__button button" href="#">
+                <a class="gift__button button button-loading" href="#">
                   Хочу подарок
                 </a>
               </div>
@@ -485,7 +484,7 @@
                 <p class="gift__description">
                   При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
                 </p>
-                <a class="gift__button button" href="#">
+                <a class="gift__button button button-loading" href="#">
                   Хочу подарок
                 </a>
               </div>
@@ -516,15 +515,14 @@
                 <b class="ice-cream__price">
                   310 ₽/кг
                 </b>
-                <a class="ice-cream__basket-button" href="#">
+                <a class="ice-cream__basket-button ice-cream__basket-button--disabled" href="#">
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" aria-hidden="true" focusable="false" width="32" height="32"
-                    viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="16" fill="currentColor" />
+                  <svg class="ice-cream__icon ice-cream__icon--diasbled" width="16" height="16" aria-hidden="true"
+                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
                   </svg>
                 </a>
@@ -547,15 +545,14 @@
                 <b class="ice-cream__price">
                   340 ₽/кг
                 </b>
-                <a class="ice-cream__basket-button" href="#">
+                <a class="ice-cream__basket-button ice-cream__basket-button--disabled" href="#">
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" aria-hidden="true" focusable="false" width="32" height="32"
-                    viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="16" fill="currentColor" />
+                  <svg class="ice-cream__icon ice-cream__icon--diasbled" width="16" height="16" aria-hidden="true"
+                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
                   </svg>
                 </a>
@@ -578,15 +575,14 @@
                 <b class="ice-cream__price">
                   330 ₽/кг
                 </b>
-                <a class="ice-cream__basket-button" href="#">
+                <a class="ice-cream__basket-button ice-cream__basket-button--disabled" href="#">
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" aria-hidden="true" focusable="false" width="32" height="32"
-                    viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="16" fill="currentColor" />
+                  <svg class="ice-cream__icon ice-cream__icon--diasbled" width="16" height="16" aria-hidden="true"
+                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
                   </svg>
                 </a>
@@ -609,15 +605,14 @@
                 <b class="ice-cream__price">
                   320 ₽/кг
                 </b>
-                <a class="ice-cream__basket-button" href="#">
+                <a class="ice-cream__basket-button ice-cream__basket-button--disabled" href="#">
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" aria-hidden="true" focusable="false" width="32" height="32"
-                    viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="16" fill="currentColor" />
+                  <svg class="ice-cream__icon ice-cream__icon--diasbled" width="16" height="16" aria-hidden="true"
+                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
                   </svg>
                 </a>
@@ -695,7 +690,7 @@
                 происходит.
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-              <form class="news-form" action="https://echo.htmlacademy.ru/" method="post">
+              <form class="news__form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="news__label">
                   <span class="visually-hidden">
                     Электронная почта
@@ -703,7 +698,7 @@
                   <input class="news__input" placeholder="email@example.com" type="email" name="newsletter-email"
                     id="newsletter-email" required>
                 </label>
-                <button class="news__button submit-button" type="submit">
+                <button class="news__button submit-button submit-button-loading" type="submit">
                   Отправить
                 </button>
               </form>
@@ -746,7 +741,7 @@
                   name="address" id="address">
               </li>
             </ul>
-            <button class="delivery-form__button submit-button" type="submit">
+            <button class="delivery-form__button submit-button submit-button-loading" type="submit">
               Отправить
             </button>
           </form>
@@ -769,7 +764,7 @@
               <span class="address__timetable">
                 (с 10 до 20 ежедневно)
               </span>
-              <a class="address__button feedback-button" href="#">
+              <a class="address__button submit-button submit-button-loading" href="#">
                 Форма обратной связи
               </a>
             </div>
