@@ -106,7 +106,7 @@ html {
 .button-loading::before {
   position: absolute;
   content: "";
-  width: 16px;
+  width: 17px;
   height: 16px;
   background-image: url("../images/spinner-black.svg");
   background-repeat: no-repeat;
@@ -184,8 +184,6 @@ html {
 
 .header__logo {
   display: block;
-  padding: 0;
-  margin: 0;
   margin-right: 16px;
 }
 
@@ -199,8 +197,6 @@ html {
 
 .header__logo-icon {
   display: block;
-  padding: 0;
-  margin: 0;
 }
 
 .header__nav {
@@ -607,6 +603,7 @@ html {
   justify-content: space-between;
   list-style-type: none;
 }
+
 .slider__pagination-item {
   width: 12px;
   margin: 0;
@@ -645,16 +642,7 @@ html {
 }
 
 .slider__social-list {
-  padding: 0;
   margin-left: auto;
-}
-
-.social {
-  display: flex;
-  height: 24px;
-  min-width: 104px;
-  justify-content: space-between;
-  list-style-type: none;
 }
 
 .gift {
@@ -682,8 +670,6 @@ html {
   background-color: #ff7799;
   display: flex;
   width: 534px;
-  margin: 0;
-  padding: 0;
   padding-left: 36px;
   border-radius: 10px;
 }
@@ -768,14 +754,9 @@ html {
   opacity: 0.3;
 }
 
-.ice-cream__picture-wrapper {
-  margin: 0 auto;
-}
-
 .ice-cream__picture {
   display: block;
   margin: 0 auto;
-  padding: 0;
   margin-bottom: 16px;
 }
 
@@ -785,14 +766,12 @@ html {
   line-height: 24px;
   color: #2d3440;
   margin: 0;
-  padding: 0;
   text-align: center;
   margin-bottom: 8px;
 }
 
 .ice-cream__description {
   margin: 0 auto;
-  padding: 0;
   text-align: center;
   color: #565c66;
   margin-bottom: 16px;
@@ -871,7 +850,6 @@ html {
 }
 
 .features__title {
-  padding: 0;
   margin: 0;
   margin-bottom: 56px;
   text-align: center;
@@ -889,8 +867,6 @@ html {
 
 .features__item {
   display: flex;
-  padding: 0;
-  margin: 0;
 }
 
 .features__icon-container {
@@ -904,12 +880,10 @@ html {
 
 .features__icon {
   display: block;
-  padding: 0;
   margin: auto;
 }
 
 .features__description {
-  padding: 0;
   margin: 0;
   width: 442px;
 }
@@ -934,13 +908,11 @@ html {
 
 .blog__preview {
   line-height: 20px;
-  padding: 0;
   margin: 0;
   margin-bottom: 12px;
 }
 
 .blog__title {
-  padding: 0;
   margin: 0;
   width: 303px;
   margin-bottom: 36px;
@@ -979,7 +951,6 @@ html {
 }
 
 .news__description {
-  padding: 0;
   margin: 0;
   padding-bottom: 44px;
 }
@@ -991,8 +962,6 @@ html {
 
 .news__label {
   display: flex;
-  padding: 0;
-  margin: 0;
   margin-right: 18px;
   flex-grow: 1;
 }
@@ -1001,7 +970,6 @@ html {
   font-size: 16px;
   line-height: 20px;
   color:#2d3440;
-  margin: 0;
   padding: 14px 15px;
   flex-grow: 1;
   border: 1px solid #b9b9b9;
@@ -1040,14 +1008,11 @@ html {
 
 .delivery__title {
   margin: 0;
-  padding: 0;
   margin-bottom: 24px;
 }
 
 .delivery__description {
   width: 371px;
-  padding: 0;
-  margin: 0;
 }
 
 .delivery-form {
@@ -1061,7 +1026,6 @@ html {
 }
 
 .delivery-form__action {
-  padding: 0;
   padding-right: 40px;
   margin: 0;
   margin-bottom: 32px;
@@ -1160,16 +1124,12 @@ html {
   line-height: 24px;
   color: #2d3440;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 
 .address__timetable {
   font-size: 14px;
   line-height: 20px;
   display: block;
-  margin: 0;
-  padding: 0;
   margin-bottom: 32px;
 }
 
@@ -1187,8 +1147,22 @@ html {
 }
 
 .footer__social-list {
-  padding: 0;
   margin: 0;
+}
+
+.social {
+  display: flex;
+  height: 24px;
+  min-width: 104px;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.social__link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .social__icon {
@@ -1197,9 +1171,21 @@ html {
   color: #fcfcfc;
 }
 
-/*надо подумать , как убрать окантовку с рамки*/
-.social__icon:hover {
+.social__link:hover .social__icon {
   background-color: #2d3440;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.5;
+}
+
+.social__link:focus-visible {
+  outline: none;
+}
+
+.social__link:focus-within .social__icon {
+  background-color: #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .useful-info {
@@ -1213,8 +1199,6 @@ html {
 }
 
 .useful-info__item {
-  padding: 0;
-  margin: 0;
   padding-left: 23px;
 }
 
@@ -1242,7 +1226,7 @@ html {
   position: absolute;
   content: "";
   width: 14px;
-  height: 12px;
+  height: 13px;
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   top: 4px;
@@ -1301,8 +1285,6 @@ html {
 
 .breadcrumbs__item {
   position: relative;
-  padding: 0;
-  margin: 0;
   margin-right: 8px;
   padding-right: 20px;
 }
@@ -1474,14 +1456,10 @@ html {
 .pagination__item {
   width: 24px;
   height: 24px;
-  padding: 0;
-  margin: 0;
 }
 
 .pagination__link {
   display: flex;
-  padding: 0;
-  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
