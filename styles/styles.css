@@ -1171,11 +1171,19 @@ html {
   color: #fcfcfc;
 }
 
-.social__link:hover .social__icon {
+/*.social__link:hover .social__icon {
+  background-color: #2d3440;
+}*/
+
+.social__icon:hover {
   background-color: #2d3440;
 }
 
-.social__link:active .social__icon {
+/*.social__link:active .social__icon {
+  opacity: 0.5;
+}*/
+
+.social__icon:active {
   opacity: 0.5;
 }
 
