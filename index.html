@@ -17,7 +17,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--catalog nav__link--catalog-open" href="creamy-ice-cream.html">
+              <a class="nav__link nav__link--catalog nav__link--open" href="creamy-ice-cream.html">
                 <span class="nav__name">Каталог</span>
                 <svg class="nav__icon" width="16" height="17" aria-hidden="true" focusable="false" viewBox="0 0 16 17"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +129,7 @@
                     Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный
                     десерт для всей семьи.
                   </p>
-                  <a class="slider__order-button button button-loading" href="#">
+                  <a class="slider__order-button button button--loading" href="#">
                     Заказать
                   </a>
                 </div>
@@ -248,7 +248,7 @@
                     летний
                     день.
                   </p>
-                  <a class="slider__order-button button button-loading" href="#">
+                  <a class="slider__order-button button button--loading" href="#">
                     Заказать
                   </a>
                 </div>
@@ -366,7 +366,7 @@
                     Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
                     возрастов.
                   </p>
-                  <a class="slider__order-button button button-loading" href="#">
+                  <a class="slider__order-button button button--loading" href="#">
                     Заказать
                   </a>
                 </div>
@@ -487,7 +487,7 @@
                 <p class="gift__description">
                   При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
                 </p>
-                <a class="gift__button button button-loading" href="#">
+                <a class="gift__button button button--loading" href="#">
                   Хочу подарок
                 </a>
               </div>
@@ -502,7 +502,7 @@
                 <p class="gift__description">
                   При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
                 </p>
-                <a class="gift__button button button-loading" href="#">
+                <a class="gift__button button button--loading" href="#">
                   Хочу подарок
                 </a>
               </div>
@@ -518,8 +518,10 @@
           <ul class="hit-ice-cream__list ice-cream">
             <li class="ice-cream__item">
               <a class="ice-cream__link" href="#">
-                <img class="ice-cream__picture" src="images/catalog/scoop-raspberry.png" width="168" height="168"
-                  alt="Шарик мороженого.">
+                <div class="ice-cream__picture-wrapper">
+                  <img class="ice-cream__picture" src="images/catalog/scoop-raspberry.png" width="168" height="168"
+                    alt="Шарик мороженого.">
+                </div>
                 <h3 class="ice-cream__name">
                   Малинка
                 </h3>
@@ -546,8 +548,10 @@
             </li>
             <li class="ice-cream__item">
               <a class="ice-cream__link" href="#">
-                <img class="ice-cream__picture" src="images/catalog/scoop-pistachio.png" width="168" height="168"
-                  alt="Шарик мороженого.">
+                <div class="ice-cream__picture-wrapper">
+                  <img class="ice-cream__picture" src="images/catalog/scoop-pistachio.png" width="168" height="168"
+                    alt="Шарик мороженого.">
+                </div>
                 <h3 class="ice-cream__name">
                   Фисташка
                 </h3>
@@ -574,8 +578,10 @@
             </li>
             <li class="ice-cream__item">
               <a class="ice-cream__link" href="#">
-                <img class="ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168"
-                  alt="Шарик мороженого.">
+                <div class="ice-cream__picture-wrapper">
+                  <img class="ice-cream__picture" src="images/catalog/scoop-blueberry.png" width="168" height="168"
+                    alt="Шарик мороженого.">
+                </div>
                 <h3 class="ice-cream__name">
                   Черника
                 </h3>
@@ -602,8 +608,10 @@
             </li>
             <li class="ice-cream__item">
               <a class="ice-cream__link" href="#">
-                <img class="ice-cream__picture" src="images/catalog/scoop-bubble-gum.png" width="168" height="168"
-                  alt="Шарик мороженого.">
+                <div class="ice-cream__picture-wrapper">
+                  <img class="ice-cream__picture" src="images/catalog/scoop-bubble-gum.png" width="168" height="168"
+                    alt="Шарик мороженого.">
+                </div>
                 <h3 class="ice-cream__name">
                   Бабл-гам
                 </h3>
@@ -708,7 +716,7 @@
                   <input class="news__input" placeholder="email@example.com" type="email" name="newsletter-email"
                     id="newsletter-email" required>
                 </label>
-                <button class="news__button submit-button submit-button-loading" type="submit">
+                <button class="news__button submit-button submit-button--loading" type="submit">
                   Отправить
                 </button>
               </form>
@@ -751,7 +759,7 @@
                   name="address" id="address">
               </li>
             </ul>
-            <button class="delivery-form__button submit-button submit-button-loading" type="submit">
+            <button class="delivery-form__button submit-button submit-button--loading" type="submit">
               Отправить
             </button>
           </form>
@@ -774,7 +782,7 @@
               <span class="address__timetable">
                 (с 10 до 20 ежедневно)
               </span>
-              <a class="address__button submit-button submit-button-loading" href="#">
+              <a class="address__button submit-button submit-button--loading" href="#">
                 Форма обратной связи
               </a>
             </div>
