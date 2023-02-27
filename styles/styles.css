@@ -327,6 +327,7 @@ html {
 }
 
 .nav__user-item {
+  position: relative;
   display: flex;
   padding: 0;
   margin: 0;
@@ -403,6 +404,182 @@ html {
 
 .nav__user-icon--text {
   margin-right: 6px;
+}
+
+/*Поповер для поиска*/
+.popover-search {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 356px;
+  padding: 24px 16px;
+  color: #2d3440;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  min-height: 96px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  display: none;
+}
+
+.popover-search__label {
+  display: flex;
+}
+
+.popover-search__input {
+  font-family: "Inter", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 14px 16px;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.popover-search__input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
+/*Поповер для корзины*/
+.popover-cart {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 441px;
+  padding: 48px;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  min-height: 156px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+/*Закрывает основной popover корзины*/
+.popover-cart-basic {
+  display: none;
+}
+
+/*Открывает основной popover корзины*/
+.popover-cart-basic--open {
+  display: block;
+}
+
+.popover-cart__content {
+  height: 100%;
+}
+
+.popover-cart__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popover-cart__list {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.popover-cart__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popover-cart__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.popover-cart__picture-wrapper {
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 46px;
+  height: 46px;
+}
+
+.popover-cart__name {
+  margin: 0;
+  margin-bottom: 4px;
+  width: 150px;
+}
+
+.popover-cart__description {
+  color: #b9b9b9;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-cart__price {
+  margin-left: auto;
+  margin-right: 40px;
+  align-self: center;
+  width: 70px;
+  text-align: center;
+}
+
+.popover-cart__delete-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popover-cart__delete-button:hover {
+  opacity: 0.6;
+}
+
+.popover-cart__delete-button:active {
+  opacity: 0.3;
+}
+
+.popover-cart__total-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Текст в корзине "Нет товара", поповер "Корзина пуста"*/
+.nav__user-text-no-goods {
+  display: none;
+}
+
+.nav__user-text-no-goods--open {
+  display: block;
+}
+
+.popover-cart-no-goods {
+  width: 288px;
+  padding-left: 26px;
+  padding-right: 26px;
+  display: none;
+}
+
+/*Открывает popover пустой корзины*/
+.popover-cart-no-goods--open {
+  display: block;
+}
+
+.popover-cart__text-no-goods {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+  color: #2d3440
 }
 
 .title-section {
@@ -1525,7 +1702,7 @@ html {
   left: 0;
   width: 13px;
   height: 13px;
-  border: 1.33px solid #2d3440;
+  border: 1px solid #2d3440;
   border-radius: 50%;
   padding: 0;
 }

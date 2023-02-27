@@ -69,7 +69,7 @@
             +7 800 555-86-28
           </a>
           <ul class="nav__user-list">
-            <li class="nav__user-item">
+            <li class="nav__user-item nav__user-item--search">
               <a class="nav__user-link nav__user-link--search nav__user-link--open" href="#">
                 <span class="visually-hidden">
                   Найти
@@ -81,6 +81,11 @@
                     fill="currentColor" />
                 </svg>
               </a>
+              <div class="nav__user-popover popover-search">
+                <label class="popover-search__label">
+                  <input class="popover-search__input" type="text" placeholder="Поиск по сайту">
+                </label>
+              </div>
             </li>
             <li class="nav__user-item">
               <a class="nav__user-link nav__user-link--text nav__user-link--open" href="#">
@@ -92,6 +97,9 @@
                 </svg>
                 <span class="nav__user-text">Вход</span>
               </a>
+              <div class="nav__user-popover popover-login">
+
+              </div>
             </li>
             <li class="nav__user-item">
               <a class="nav__user-link nav__user-link--text nav__user-link--open" href="#">
@@ -104,8 +112,75 @@
                 <span class="visually-hidden">
                   Корзина
                 </span>
-                <span class="nav__user-text">2 Товара</span>
+                <span class="nav__user-text">
+                  2 Товара
+                </span>
+                <span class="nav__user-text nav__user-text-no-goods">
+                  Нет товаров
+                </span>
               </a>
+              <div class="nav__user-popover popover-cart popover-cart-basic">
+                <div class="popover-cart__content">
+                  <h2 class="popover-cart__title">
+                    Корзина
+                  </h2>
+                  <ul class="popover-cart__list">
+                    <li class="popover-cart__item">
+                      <div class="popover-cart__picture-wrapper">
+                        <img class="popover-cart__picture" src="images/catalog/scoop-raspberry.png" width="46"
+                          height="46" alt="Шарик мороженого.">
+                      </div>
+                      <div class="popover-cart__description-wrapper">
+                        <h3 class="popover-cart__name">
+                          Малинка
+                        </h3>
+                        <p class="popover-cart__description">
+                          1 кг х 310 ₽
+                        </p>
+                      </div>
+                      <b class="popover-cart__price">
+                        310 ₽
+                      </b>
+                      <button class="popover-cart__delete-button" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </li>
+                    <li class="popover-cart__item">
+                      <div class="popover-cart__picture-wrapper">
+                        <img class="popover-cart__picture" src="images/catalog/scoop-bubble-gum.png" width="46"
+                          height="46" alt="Шарик мороженого.">
+                      </div>
+                      <div class="popover-cart__description-wrapper">
+                        <h3 class="popover-cart__name">
+                          Бабл-гам
+                        </h3>
+                        <p class="popover-cart__description">
+                          1,5 кг х 320 ₽
+                        </p>
+                      </div>
+                      <b class="popover-cart__price">
+                        480 ₽
+                      </b>
+                      <button class="popover-cart__delete-button" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-cart__total-wrapper">
+                    <button class="popover-cart__order-button submit-button submit-button--loading" type="submit">
+                      Оформить заказ
+                    </button>
+                    <b class="popover-cart__total-sum">
+                      Итого: 790 ₽
+                    </b>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__user-popover popover-cart popover-cart-no-goods">
+                <p class="popover-cart__text-no-goods">
+                  Ваша корзина пока пуста
+                </p>
+              </div>
             </li>
           </ul>
         </nav>
