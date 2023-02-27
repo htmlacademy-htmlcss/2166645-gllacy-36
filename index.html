@@ -82,9 +82,15 @@
                 </svg>
               </a>
               <div class="nav__user-popover popover-search">
+                <div class="popover-search__wrapper">
                 <label class="popover-search__label">
-                  <input class="popover-search__input" type="text" placeholder="Поиск по сайту">
+                  <input class="popover-search__input popover-search__input--text" type="text"
+                    placeholder="Поиск по сайту">
                 </label>
+                <button class="popover-search__delete-button" type="button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </div>
               </div>
             </li>
             <li class="nav__user-item">
@@ -98,7 +104,46 @@
                 <span class="nav__user-text">Вход</span>
               </a>
               <div class="nav__user-popover popover-login">
-
+                <div class="popover-login__content">
+                  <h2 class="popover-login__title">
+                    Личный кабинет
+                  </h2>
+                  <ul class="popover-login__list">
+                    <li class="popover-login__item">
+                      <label class="popover-login__label">
+                        <input class="popover-login__input popover-login__input--error popover-login__input--disabled"
+                          type="email" placeholder="email@example.com">
+                      </label>
+                    </li>
+                    <li class="popover-login__item">
+                      <label class="popover-login__label">
+                        <input class="popover-login__input popover-login__input--error popover-login__input--disabled"
+                          type="password" placeholder="password">
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="popover-login__wrapper">
+                    <a class="popover-login__button-link submit-button submit-button--loading" href="#">
+                      Войти
+                    </a>
+                    <ul class="popover-login__button-list">
+                      <li class="popover-login__button-item">
+                        <a class="popover-login__link" href="#">
+                          <span class="popover-login__text">
+                            Забыли пароль?
+                          </span>
+                        </a>
+                      </li>
+                      <li class="popover-login__button-item">
+                        <a class="popover-login__link" href="#">
+                          <span class="popover-login__text">
+                            Регистрация
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </li>
             <li class="nav__user-item">
