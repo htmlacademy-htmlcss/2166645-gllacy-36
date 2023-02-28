@@ -283,20 +283,76 @@ html {
   outline-offset: -2px;
 }
 
+.nav__item--catalog {
+  position: relative;
+}
+
+.nav__item--catalog:focus-within .nav-catalog__list {
+  display: block;
+}
+
 .nav-catalog__list {
   display: none;
   list-style-type: none;
+  border-radius: 4px;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 135px;
+  background-color: #fcfcfc;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
+.nav-catalog__item {
+ padding: 0;
+}
+
+.nav-catalog__item:first-child {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.nav-catalog__item:first-child::before {
+  margin-bottom: 8px;
+  position: absolute;
+  content: "";
+  width: 103px;
+  height: 1px;
+  background-color: #b9b9b9;
+  left: 16px;
+  bottom: calc(-50% + 4px);
 }
 
 .nav-catalog__link {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
+  margin: 0;
+  padding: 6px 13px 6px 16px;
+}
+
+.nav-catalog__link:hover {
+  background-color: #ffcbd8;
+}
+
+.nav-catalog__link:active {
+  background-color: #ff7799;
+}
+
+.nav-catalog__link:focus-visible {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  outline: none;
 }
 
 .nav-catalog__link--new {
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .nav__link-tel {
@@ -420,7 +476,12 @@ html {
   background-color: #fcfcfc;
   min-height: 96px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
- /*display: none;*/
+  display: none;
+}
+
+/*Открывает popover поиска*/
+.popover-search--open {
+  display: block;
 }
 
 .popover-search__wrapper {
