@@ -860,9 +860,24 @@
             </p>
             <ul class="delivery-form__list">
               <li class="delivery-form__item">
-                <label class="delivery-form__label" for="name">
-                  Дата
-                </label>
+                <span class="delivery-form__label">
+                  <label class="delivery-form__label" for="name">
+                    Дата
+                  </label>
+                  <span class="delivery-form__tooltip">
+                    <button class="delivery-form__tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="delivery-form__tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.12a4.88 4.88 0 1 0 0 9.76 4.88 4.88 0 0 0 0-9.76ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                          fill="currentColor" />
+                      </svg>
+                    </button>
+                    <span class="delivery-form__tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите желаемую дату
+                    </span>
+                  </span>
+                </span>
                 <input class="delivery-form__input" type="text" name="name" id="name" placeholder="01.04.2020">
               </li>
               <li class="delivery-form__item">
@@ -872,9 +887,24 @@
                 <input class="delivery-form__input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
               </li>
               <li class="delivery-form__item delivery-form__item--address">
-                <label class="delivery-form__label" for="address">
-                  Адрес
-                </label>
+                <span class="delivery-form__label">
+                  <label class="delivery-form__label" for="address">
+                    Адрес
+                  </label>
+                  <span class="delivery-form__tooltip">
+                    <button class="delivery-form__tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
+                      <svg class="delivery-form__tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 2.12a4.88 4.88 0 1 0 0 9.76 4.88 4.88 0 0 0 0-9.76ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                          fill="currentColor" />
+                      </svg>
+                    </button>
+                    <span class="delivery-form__tooltip-text" role="tooltip" id="tooltip-label-address">
+                      Введите название <br> улицы, дома и квартиры
+                    </span>
+                  </span>
+                </span>
                 <input class="delivery-form__input" placeholder="ул. Большая Конюшенная, 19/8" type="text"
                   name="address" id="address">
               </li>
@@ -984,6 +1014,7 @@
         </div>
       </footer>
     </div>
+    <!--Modal-->
     <div class="modal-container modal modal--close">
       <div class="modal__auth">
         <button class="modal__close-button" type="button">
@@ -999,17 +1030,18 @@
               <li class="modal-form__item">
                 <label class="modal-form__label" for="initials">
                 </label>
-                <input class="modal-form__input modal-form__input--error modal-form__input--disabled" type="text" name="initials" id="initials" placeholder="Имя и фамилия">
+                <input class="modal-form__input modal-form__input--error modal-form__input--disabled" type="text"
+                  name="initials" id="initials" placeholder="Имя и фамилия">
               </li>
               <li class="modal-form__item">
                 <label class="modal-form__label" for="modal-email">
                 </label>
-                <input class="modal-form__input modal-form__input--error modal-form__input--disabled" placeholder="email@example.com" type="email" name="modal-email"
-                  id="modal-email">
+                <input class="modal-form__input modal-form__input--error modal-form__input--disabled"
+                  placeholder="email@example.com" type="email" name="modal-email" id="modal-email">
               </li>
               <li class="modal-form__item">
-                <textarea class="modal-form__textarea modal-form__textarea--error modal-form__textarea--disabled" name="comment" id="comment-field"
-                placeholder="В свободной форме"></textarea>
+                <textarea class="modal-form__textarea modal-form__textarea--error modal-form__textarea--disabled"
+                  name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
               </li>
             </ul>
             <button class="modal-form__button submit-button submit-button--loading" type="submit">

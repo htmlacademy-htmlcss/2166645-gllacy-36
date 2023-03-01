@@ -1457,6 +1457,68 @@ html {
   margin-bottom: 8px;
 }
 
+.delivery-form__tooltip {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+.delivery-form__tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.delivery-form__tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #2d3440;
+  display: block;
+}
+
+.delivery-form__tooltip-toggle:hover .delivery-form__tooltip-icon {
+  opacity: 0.6;
+}
+
+.delivery-form__tooltip-text {
+  background-color: #fcfcfc;
+  color: #565c66;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 10px 8px;
+  width: 146px;
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
+  border: 1px solid #b9b9b9;
+  position: absolute;
+  top: -11px;
+  left: calc(100% + 10px);
+  display: none;
+}
+
+.delivery-form__tooltip-text::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -4.7px;
+  width: 7px;
+  height: 7px;
+  background-color: #fcfcfc;
+  border: 1px solid #b9b9b9;
+  border-right: none;
+  border-bottom: none;
+  transform: rotate(-45deg);
+}
+
+.delivery-form__tooltip-toggle:hover + .delivery-form__tooltip-text,
+.delivery-form__tooltip-toggle:focus + .delivery-form__tooltip-text {
+  display: block;
+}
+
 .delivery-form__input {
   font-size: 16px;
   line-height: 20px;
