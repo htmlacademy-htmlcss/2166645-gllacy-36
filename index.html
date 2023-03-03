@@ -82,7 +82,7 @@
                 </svg>
               </a>
               <div class="nav__user-popover popover-search">
-                <div class="popover-search__wrapper">
+                <form class="popover-search__form" action="https://echo.htmlacademy.ru/" method="get">
                   <label class="popover-search__label">
                     <input class="popover-search__input popover-search__input--text input input--error input--disabled"
                       type="text" placeholder="Поиск по сайту">
@@ -90,7 +90,7 @@
                   <button class="popover-search__delete-button" type="button">
                     <span class="visually-hidden">Закрыть</span>
                   </button>
-                </div>
+                </form>
               </div>
             </li>
             <li class="nav__user-item">
@@ -104,10 +104,10 @@
                 <span class="nav__user-text">Вход</span>
               </a>
               <div class="nav__user-popover popover-login">
-                <div class="popover-login__content">
-                  <h2 class="popover-login__title">
-                    Личный кабинет
-                  </h2>
+                <h2 class="popover-login__title">
+                  Личный кабинет
+                </h2>
+                <form class="popover-login__form" action="https://echo.htmlacademy.ru/" method="post">
                   <ul class="popover-login__list">
                     <li class="popover-login__item">
                       <label class="popover-login__label">
@@ -143,7 +143,7 @@
                       </li>
                     </ul>
                   </div>
-                </div>
+                </form>
               </div>
             </li>
             <li class="nav__user-item">
@@ -833,8 +833,8 @@
                   <span class="visually-hidden">
                     Электронная почта
                   </span>
-                  <input class="news__input input" placeholder="email@example.com"
-                    type="email" name="newsletter-email" id="newsletter-email" required>
+                  <input class="news__input input" placeholder="email@example.com" type="email" name="newsletter-email"
+                    id="newsletter-email" required>
                 </label>
                 <button class="news__button submit-button" type="submit">
                   Отправить
@@ -878,15 +878,13 @@
                     </span>
                   </span>
                 </span>
-                <input class="delivery-form__input input" type="text" name="name" id="name"
-                  placeholder="01.04.2020">
+                <input class="delivery-form__input input" type="text" name="name" id="name" placeholder="01.04.2020">
               </li>
               <li class="delivery-form__item">
                 <label class="delivery-form__label" for="tel">
                   Телефон
                 </label>
-                <input class="delivery-form__input input" placeholder="+7 800 999-00-00"
-                  type="tel" name="tel" id="tel">
+                <input class="delivery-form__input input" placeholder="+7 800 999-00-00" type="tel" name="tel" id="tel">
               </li>
               <li class="delivery-form__item delivery-form__item--address">
                 <span class="delivery-form__label">
@@ -907,8 +905,8 @@
                     </span>
                   </span>
                 </span>
-                <input class="delivery-form__input input"
-                  placeholder="ул. Большая Конюшенная, 19/8" type="text" name="address" id="address">
+                <input class="delivery-form__input input" placeholder="ул. Большая Конюшенная, 19/8" type="text"
+                  name="address" id="address">
               </li>
             </ul>
             <button class="delivery-form__button submit-button" type="submit">
