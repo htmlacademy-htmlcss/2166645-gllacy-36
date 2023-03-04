@@ -524,7 +524,7 @@ html {
   display: block;
 }
 
-.popover-search__wrapper {
+.popover-search__form {
   position: relative;
 }
 
@@ -601,7 +601,6 @@ html {
 }
 
 .popover-login__list {
-
   list-style-type: none;
   padding: 0;
   margin-bottom: 32px;
