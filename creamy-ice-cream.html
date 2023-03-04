@@ -16,8 +16,8 @@
         </a>
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--catalog nav__link--open" href="creamy-ice-cream.html">
+            <li class="nav__item nav__item--catalog">
+              <a class="nav__link nav__link--catalog" href="creamy-ice-cream.html">
                 <span class="nav__name">Каталог</span>
                 <svg class="nav__icon" width="16" height="17" aria-hidden="true" focusable="false" viewBox="0 0 16 17"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,8 +27,8 @@
                 </svg>
               </a>
               <ul class="nav-catalog__list">
-                <li class="nav-catalog__item nav-catalog__item--new">
-                  <a class="nav-catalog__link" href="#">
+                <li class="nav-catalog__item">
+                  <a class="nav-catalog__link nav-catalog__link--new" href="#">
                     Новинки
                   </a>
                 </li>
@@ -69,8 +69,8 @@
             +7 800 555-86-28
           </a>
           <ul class="nav__user-list">
-            <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--search nav__user-link--open" href="#">
+            <li class="nav__user-item nav__user-item--search">
+              <a class="nav__user-link nav__user-link--search" href="#">
                 <span class="visually-hidden">
                   Найти
                 </span>
@@ -81,9 +81,20 @@
                     fill="currentColor" />
                 </svg>
               </a>
+              <div class="nav__user-popover popover-search">
+                <form class="popover-search__form" action="https://echo.htmlacademy.ru/" method="get">
+                  <label class="popover-search__label">
+                    <input class="popover-search__input popover-search__input--text input input--error input--disabled"
+                      type="text" placeholder="Поиск по сайту">
+                  </label>
+                  <button class="popover-search__delete-button" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </form>
+              </div>
             </li>
             <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--text nav__user-link--open" href="#">
+              <a class="nav__user-link nav__user-link--text" href="#">
                 <svg class="nav__user-icon nav__user-icon--text" width="14" height="14" aria-hidden="true"
                   focusable="false" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -92,9 +103,51 @@
                 </svg>
                 <span class="nav__user-text">Вход</span>
               </a>
+              <div class="nav__user-popover popover-login">
+                <h2 class="popover-login__title">
+                  Личный кабинет
+                </h2>
+                <form class="popover-login__form" action="https://echo.htmlacademy.ru/" method="post">
+                  <ul class="popover-login__list">
+                    <li class="popover-login__item">
+                      <label class="popover-login__label">
+                        <input class="popover-login__input input input--error input--disabled" type="email"
+                          placeholder="email@example.com">
+                      </label>
+                    </li>
+                    <li class="popover-login__item">
+                      <label class="popover-login__label">
+                        <input class="popover-login__input input input--error input--disabled" type="password"
+                          placeholder="password">
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="popover-login__wrapper">
+                    <button class="popover-login__button-link submit-button submit-button--loading" type="submit">
+                      Войти
+                    </button>
+                    <ul class="popover-login__button-list">
+                      <li class="popover-login__button-item">
+                        <a class="popover-login__link" href="#">
+                          <span class="popover-login__text">
+                            Забыли пароль?
+                          </span>
+                        </a>
+                      </li>
+                      <li class="popover-login__button-item">
+                        <a class="popover-login__link" href="#">
+                          <span class="popover-login__text">
+                            Регистрация
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
             </li>
             <li class="nav__user-item">
-              <a class="nav__user-link nav__user-link--text nav__user-link--open" href="#">
+              <a class="nav__user-link nav__user-link--text" href="#">
                 <svg class="nav__user-icon nav__user-icon--text" width="15" height="14" aria-hidden="true"
                   focusable="false" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -104,8 +157,75 @@
                 <span class="visually-hidden">
                   Корзина
                 </span>
-                <span class="nav__user-text">2 Товара</span>
+                <span class="nav__user-text">
+                  2 Товара
+                </span>
+                <span class="nav__user-text nav__user-text-no-goods">
+                  Нет товаров
+                </span>
               </a>
+              <div class="nav__user-popover popover-cart popover-cart-basic">
+                <div class="popover-cart__content">
+                  <h2 class="popover-cart__title">
+                    Корзина
+                  </h2>
+                  <ul class="popover-cart__list">
+                    <li class="popover-cart__item">
+                      <div class="popover-cart__picture-wrapper">
+                        <img class="popover-cart__picture" src="images/catalog/scoop-raspberry.png" width="46"
+                          height="46" alt="Шарик мороженого.">
+                      </div>
+                      <div class="popover-cart__description-wrapper">
+                        <h3 class="popover-cart__name">
+                          Малинка
+                        </h3>
+                        <p class="popover-cart__description">
+                          1 кг х 310 ₽
+                        </p>
+                      </div>
+                      <b class="popover-cart__price">
+                        310 ₽
+                      </b>
+                      <button class="popover-cart__delete-button" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </li>
+                    <li class="popover-cart__item">
+                      <div class="popover-cart__picture-wrapper">
+                        <img class="popover-cart__picture" src="images/catalog/scoop-bubble-gum.png" width="46"
+                          height="46" alt="Шарик мороженого.">
+                      </div>
+                      <div class="popover-cart__description-wrapper">
+                        <h3 class="popover-cart__name">
+                          Бабл-гам
+                        </h3>
+                        <p class="popover-cart__description">
+                          1,5 кг х 320 ₽
+                        </p>
+                      </div>
+                      <b class="popover-cart__price">
+                        480 ₽
+                      </b>
+                      <button class="popover-cart__delete-button" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-cart__total-wrapper">
+                    <button class="popover-cart__order-button submit-button submit-button--loading" type="submit">
+                      Оформить заказ
+                    </button>
+                    <b class="popover-cart__total-sum">
+                      Итого: 790 ₽
+                    </b>
+                  </div>
+                </div>
+              </div>
+              <div class="nav__user-popover popover-cart popover-cart-no-goods">
+                <p class="popover-cart__text-no-goods">
+                  Ваша корзина пока пуста
+                </p>
+              </div>
             </li>
           </ul>
         </nav>
@@ -273,7 +393,7 @@
                           fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath id="b">
                           <path fill="#fff" d="M0 0h16v16H0z" />
                         </clipPath>
                       </defs>
@@ -300,7 +420,7 @@
                           fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath id="c">
                           <path fill="#fff" d="M0 0h16v16H0z" />
                         </clipPath>
                       </defs>
@@ -327,7 +447,7 @@
                           fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath id="d">
                           <path fill="#fff" d="M0 0h16v16H0z" />
                         </clipPath>
                       </defs>
@@ -354,7 +474,7 @@
                           fill="currentColor" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath id="e">
                           <path fill="#fff" d="M0 0h16v16H0z" />
                         </clipPath>
                       </defs>
