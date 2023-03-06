@@ -1798,10 +1798,11 @@ html {
 .modal__auth {
   position: relative;
   margin: auto;
-  padding: 64px 62px 66px 64px;;
+  padding: 64px 64px 66px 64px;
   background-color: #fcfcfc;
   box-sizing: border-box;
   width: 570px;
+  border-radius: 8px;
 }
 
 .modal__close-button {
@@ -1844,7 +1845,8 @@ html {
 }
 
 .modal-form__input {
-  padding: 16px 14px;
+  padding: 13px 16px 12px 15px;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: 2px solid #b9b9b9;
@@ -1855,7 +1857,7 @@ html {
 }
 
 .modal-form__textarea {
-  padding: 16px 14px;
+  padding: 14px 16px;
   font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1864,7 +1866,7 @@ html {
   background-color: #ffffff;
   color: #2d3440;
   flex-grow: 1;
-  min-height: 149px;
+  min-height: 117px;
 }
 
 .modal-form__input::placeholder,
