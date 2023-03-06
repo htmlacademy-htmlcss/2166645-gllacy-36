@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -426,7 +425,7 @@ html {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-right: 16px;
+  margin-right: 19px;
 }
 
 .nav__user-item:nth-child(3n) {
@@ -813,12 +812,13 @@ html {
 }
 
 .slider {
-  margin-bottom: 80px;
+  margin-bottom: 62px;
  }
 
 .slider__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
   padding: 0;
 }
 
@@ -850,11 +850,16 @@ html {
   flex-direction: column;
   width: 470px;
   margin-top: 115px;
+  margin-right: 5px;
 }
 
 .slider__title {
+  font-size: 36px;
+  line-height: 46px;
   margin: 0;
   margin-bottom: 24px;
+  font-weight: 900;
+  color: #2d3440;
 }
 
 .slider__description {
@@ -871,7 +876,7 @@ html {
 
 .slider__picture-container {
   display: flex;
-  width: 630px;
+  width: 625px;
   position: relative;
 }
 
@@ -882,7 +887,7 @@ html {
   border-radius: 50%;
   border: 2px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.3);
-  top: 50%;
+  top: calc(50% + 4px);
   cursor: pointer;
 }
 
@@ -923,9 +928,10 @@ html {
   color: #2d3440;
 }
 
-.slider__button--disabled {
+/*состояние disabled кнопок назад и вперед слайдера*/
+/*slider__button--disabled {
   opacity: 0.4;
-}
+}*/
 
 .slider__main-picture-wrapper {
   position: relative;
@@ -958,7 +964,8 @@ html {
 .slider__wrapper-thumb {
   position: relative;
   align-self: center;
-  margin-right: 0;
+  margin-right: 10px;
+  margin-top: 8px;
   opacity: 40%;
 }
 
@@ -994,12 +1001,14 @@ html {
 .slider__footer-container {
   display: flex;
   justify-content: space-between;
+  margin-top: -5px;
 }
 
 .slider__pagination {
   display: flex;
   width: 52px;
   margin: 0;
+  margin-top: auto;
   padding: 0;
   justify-content: space-between;
   list-style-type: none;
@@ -1055,7 +1064,7 @@ html {
 .gift__title {
   width: 434px;
   text-align: center;
-  margin: 0 auto 55px auto;
+  margin: 0 auto 54px auto;
 }
 
 .gift__list {
@@ -1072,7 +1081,7 @@ html {
   display: flex;
   width: 534px;
   padding-left: 36px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .gift__descriptopn-container {
@@ -1137,7 +1146,7 @@ html {
   width: 100%;
   height: calc(100% - 61px);
   background-color: #fcfcfc;
-  border-radius: 10px;
+  border-radius: 8px;
   z-index: -1;
   left: 0;
   bottom: 0;
@@ -1174,14 +1183,14 @@ html {
   color: #2d3440;
   margin: 0;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .ice-cream__description {
   margin: 0 auto;
   text-align: center;
   color: #565c66;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .ice-cream__price-basket-wrapper {
@@ -1203,11 +1212,12 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #ff2f64;
   outline: 2px solid #ff2f64;
+  outline-offset: -2px;
 }
 
 .ice-cream__icon {
@@ -1230,9 +1240,9 @@ html {
 
 .ice-cream__basket-button:focus-visible {
   outline: 2px solid #2d3440;
-  outline-offset: 0;
 }
 
+/*состояние disabled кнопки "Корзина" в карточках*/
 .ice-cream__basket-button--disabled {
   background-color: #b9b9b9;
   outline-color: #b9b9b9;
@@ -1245,14 +1255,16 @@ html {
 .features {
   background-color: #f3ae0083;
   background-image: url("../images/waffle-background.jpg");
+  background-position: 0 -15px;
+  background-size: 147%;
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 16px;
   margin-bottom: 80px;
 }
 
 .features__container {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 56px 40px;
 }
 
@@ -1269,7 +1281,7 @@ html {
   padding: 0;
   margin: 0;
   row-gap: 40px;
-  column-gap: 32px;
+  column-gap: 31px;
 }
 
 .features__item {
@@ -1278,8 +1290,8 @@ html {
 
 .features__icon-container {
   display: flex;
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 45px;
   border: 2px solid #2D3440;
   border-radius: 50%;
   margin-right: 16px;
@@ -1305,10 +1317,10 @@ html {
   background-color: #ffffff;
   background-image: url("../images/ice-cream-raspberry-background.jpg");
   background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: -10px -110px;
+  background-size: 114%;
+  background-position: -5px -107px;
   width: 506px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 33px 32px;
 
 }
@@ -1346,14 +1358,15 @@ html {
   background-color: #ffffff;
   background-image: url("../images/letter-background.jpg");
   background-size: 110%;
+  background-position: -10px -10px;
   width: 558px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 6px;
 }
 
 .news__container {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 26px;
 }
 
@@ -1377,7 +1390,7 @@ html {
   font-size: 16px;
   line-height: 20px;
   color:#2d3440;
-  padding: 14px 15px;
+  padding: 13px 15px;
   flex-grow: 1;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
@@ -1386,6 +1399,7 @@ html {
 }
 
 .news__input::placeholder {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -1394,20 +1408,21 @@ html {
 .news__button {
   margin-top: 2px;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .delivery {
   background-color: #e7e7e7;
   background-image: url("../images/ice-cream-fruits-background.jpg");
   background-repeat: no-repeat;
-  background-size: 103%;
-  background-position: 0 -130px;
+  background-size: 105%;
+  background-position: -3px -140px;
   display: flex;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
   padding-left: 100px;
   padding-right: 64px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .delivery__text-container {
@@ -1432,7 +1447,7 @@ html {
   width: 420px;
   min-height: 326px;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .delivery-form__action {
@@ -1470,10 +1485,10 @@ html {
 
 .delivery-form__tooltip {
   position: absolute;
-  margin-top: 2px;
+  margin-top: 3px;
   margin-left: 5px;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
 }
 
 .delivery-form__tooltip-toggle {
@@ -1534,14 +1549,15 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
-  padding: 14px 16px;
+  padding: 14px 16px 13px 16px;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .delivery-form__input::placeholder {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -1559,7 +1575,7 @@ html {
   background-size: cover;
   background-position: 0 -80px;
   padding: 64px 763px 64px 64px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .address-container__section {
@@ -1669,7 +1685,7 @@ html {
   display: grid;
   grid-template-columns: 150px 205px;
   column-gap: 1px;
-  row-gap: 8px;
+ /*row-gap: 2px;*/
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1715,6 +1731,10 @@ html {
   flex-direction: column;
   justify-content: space-between;
   width: 193px;
+}
+
+.footer__logo-text {
+  margin-bottom: 8px;
 }
 
 .footer__logo-text:hover {
