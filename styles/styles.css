@@ -338,10 +338,11 @@ html {
   padding-bottom: 8px;
   position: absolute;
   top: 44px;
-  left: 0;
+  left: 1px;
   width: 135px;
   background-color: #fcfcfc;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  z-index: 1;
 }
 
 .nav-catalog__item {
@@ -349,12 +350,12 @@ html {
 }
 
 .nav-catalog__item:first-child {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   position: relative;
 }
 
 .nav-catalog__item:first-child::before {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   position: absolute;
   content: "";
   width: 103px;
@@ -371,7 +372,7 @@ html {
   text-decoration: none;
   color: #2d3440;
   margin: 0;
-  padding: 6px 13px 6px 16px;
+  padding: 8px 13px 5px 16px;
 }
 
 .nav-catalog__link:hover {
