@@ -1137,7 +1137,7 @@ html {
   flex-direction: column;
   position: relative;
   width: 190px;
-  padding: 10px 40px 24px;
+  padding: 10px 40px 23px;
 }
 
 .ice-cream__item::before {
@@ -1187,10 +1187,16 @@ html {
 }
 
 .ice-cream__description {
+  font-size: 16px;
+  line-height: 22px;
   margin: 0 auto;
   text-align: center;
   color: #565c66;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+}
+
+.ice-cream__description--catalog {
+
 }
 
 .ice-cream__price-basket-wrapper {
@@ -1684,8 +1690,6 @@ html {
 .useful-info {
   display: grid;
   grid-template-columns: 150px 205px;
-  column-gap: 1px;
- /*row-gap: 2px;*/
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1727,6 +1731,7 @@ html {
 }
 
 .footer__htmlacademy {
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1766,6 +1771,15 @@ html {
 .footer__made-in-link:active {
   opacity: 0.3;
 }
+
+.useful-info--catalog {
+  margin-top: -3px;
+}
+
+.footer__htmlacademy--catalog {
+  margin-top: -1px;
+}
+
 /*Модальное окно*/
 .modal-container {
   position: fixed;
@@ -1907,7 +1921,7 @@ html {
 
 /* Catalog */
 .header--catalog {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .header-inner__breadcrumbs {
@@ -1920,8 +1934,8 @@ html {
 
 .breadcrumbs__item {
   position: relative;
-  margin-right: 8px;
-  padding-right: 20px;
+  margin-right: 6px;
+  padding-right: 22px;
 }
 
 .breadcrumbs__item:not(:last-of-type)::before {
@@ -1933,7 +1947,7 @@ html {
   background-repeat: no-repeat;
   right: 0;
   top: 50%;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .breadcrumbs__link {
@@ -1962,7 +1976,7 @@ html {
   line-height: 46px;
   color: #2d3440;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .selection {
@@ -1976,19 +1990,20 @@ html {
 .selection__form {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1170px;
+  width: 1170px;
   margin-bottom: 34px;
 }
 
 .form__sort {
-  margin-right: 24px;
+  margin: 0;
+  margin-right: 22px;
   border: none;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17x;
 }
 
 .sort__legend {
-  padding-left: 16px;
+  padding-left: 15px;
   margin-bottom: 8px;
 }
 
@@ -2001,11 +2016,11 @@ html {
   line-height: 20px;
   color: #2d3440;
   border: none;
-  padding: 9px 63px 9px 16px;
+  padding: 9px 63px 7px 16px;
   border-radius: 20px;
   background-image: url("../images/catalog/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 14px center;
+  background-position: right 16px center;
   appearance: none;
   cursor: pointer;
 }
@@ -2022,10 +2037,10 @@ html {
 }
 
 .form__price {
-  margin-right: 24px;
+  margin-right: 22px;
   border: none;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .price__legend {
@@ -2036,7 +2051,7 @@ html {
 }
 
 .price__range-scale-container {
-  padding: 19px 16px 17px 16px;
+  padding: 17px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
 }
@@ -2104,7 +2119,7 @@ html {
 
 .toggle-min {
   top: -7px;
-  left: -10px;
+  left: -6px;
 }
 
 .toggle-max {
@@ -2114,7 +2129,7 @@ html {
 
 .form__fatness {
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   border: none;
 }
 
@@ -2129,7 +2144,7 @@ html {
   background-color: rgba(252, 252, 252, 0.3);
   display: flex;
   margin: 0;
-  padding: 9px 24px;
+  padding: 9px 24px 7px 25px;
   list-style-type: none;
   border-radius: 20px;
 }
@@ -2151,7 +2166,7 @@ html {
 
 .fatness__mark {
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: 0;
   width: 13px;
   height: 13px;
@@ -2195,6 +2210,7 @@ html {
 
 .form__fillers {
   padding: 0;
+  margin: 0;
   margin-right: 16px;
   border: none;
 }
@@ -2216,7 +2232,7 @@ html {
 }
 
 .fillers__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .fillers__item {
