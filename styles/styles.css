@@ -325,6 +325,10 @@ html {
   position: relative;
 }
 
+.nav__item--catalog:hover .nav-catalog__list {
+  display: block;
+}
+
 .nav__item--catalog:focus-within .nav-catalog__list {
   display: block;
 }
@@ -449,6 +453,10 @@ html {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
+.nav__user-link:hover ~ .popover {
+  display: block;
+}
+
 .nav__user-link:active {
   background-color: #fcfcfc;
 }
@@ -533,16 +541,16 @@ html {
 }
 
 .popover-search__input {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  padding: 14px 45px 14px 16px;
+  padding: 14px 45px 13px 16px;
   flex-grow: 1;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .popover-search__input::placeholder {
@@ -616,7 +624,7 @@ html {
 
 .popover-login__input {
   flex-grow: 1;
-  padding: 14px 16px;
+  padding: 14px 16px 13px 16px;
   border-radius: 4px;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
@@ -624,10 +632,10 @@ html {
   line-height: 20px;
   background-color: #ffffff;
   color: #2d3440;
-  cursor: pointer;
 }
 
 .popover-login__input::placeholder {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -647,15 +655,15 @@ html {
   padding: 0;
 }
 
+.popover-login__button-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .popover-login__link {
   font-size: 14px;
   text-decoration: none;
   color: #2d3440;
-  display: block;
   padding: 0;
-}
-
-.popover-login__text {
   border-bottom: 1px solid #2d3440;
 }
 
@@ -675,7 +683,7 @@ html {
   z-index: 1;
   box-sizing: border-box;
   width: 441px;
-  padding: 48px;
+  padding: 54px 48px 48px 48px;
   color: #2d3440;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -693,13 +701,13 @@ html {
   display: block;
 }
 
-.popover-cart__content {
+.popover-cart__form {
   height: 100%;
 }
 
 .popover-cart__title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .popover-cart__list {
@@ -721,13 +729,14 @@ html {
 
 .popover-cart__picture-wrapper {
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 15px;
   width: 46px;
   height: 46px;
 }
 
 .popover-cart__name {
   margin: 0;
+  padding-top: 2px;
   margin-bottom: 4px;
   width: 150px;
 }
@@ -741,6 +750,8 @@ html {
 }
 
 .popover-cart__price {
+  font-size: 18px;
+  line-height: 22px;
   margin-left: auto;
   margin-right: 40px;
   align-self: center;
@@ -775,19 +786,27 @@ html {
   align-items: center;
 }
 
+.popover-cart__total-sum {
+  font-family: "Inter", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 /*Текст в корзине "Нет товара", popover "Корзина пуста"*/
 .nav__user-text-no-goods {
   display: none;
 }
 
 .nav__user-text-no-goods--open {
-  display: block;
+  /*display: block;*/
 }
 
 .popover-cart-no-goods {
   width: 288px;
+  padding-top: 49px;
   padding-left: 26px;
   padding-right: 26px;
+  z-index: 1;
   display: none;
 }
 
@@ -825,8 +844,12 @@ html {
 
 .slider__item {
   color: #2d3440;
-  display: flex;
   flex-direction: column;
+  display: none;
+}
+
+.slider__item--show {
+  display: flex;
 }
 
 .slider__item--orange { /*при реализации через JS убрать и менять свойство background-color у класса .page__body */
@@ -852,6 +875,14 @@ html {
   width: 470px;
   margin-top: 115px;
   margin-right: 5px;
+}
+
+.slider__description-container--blue {
+  margin-right: 31px;
+}
+
+.slider__description-container--orange {
+  margin-right: 32px;
 }
 
 .slider__title {
@@ -881,6 +912,10 @@ html {
   position: relative;
 }
 
+.slider__picture {
+  object-fit: cover;
+}
+
 .slider__button {
   position: absolute;
   width: 38px;
@@ -902,6 +937,7 @@ html {
 }
 
 .slider__button-icon {
+  vertical-align: middle;
   color: #fcfcfc;
 }
 
@@ -930,9 +966,9 @@ html {
 }
 
 /*состояние disabled кнопок назад и вперед слайдера*/
-/*slider__button--disabled {
+slider__button--disabled {
   opacity: 0.4;
-}*/
+}
 
 .slider__main-picture-wrapper {
   position: relative;
@@ -950,6 +986,10 @@ html {
   transform: translateY(-50%);
   left: 0;
   z-index: -1;
+}
+
+.slider__main-picture-wrapper--orange {
+  margin-right: 79px;
 }
 
 .slider__main-picture-wrapper--orange::after {
@@ -972,6 +1012,14 @@ html {
 
 .slider__wrapper-thumb:not(:last-child) {
   margin-right: 75px;
+}
+
+.slider__wrapper-thumb--blue:not(:last-child) {
+  margin-right: 80px;
+}
+
+.slider__wrapper-thumb--orange:not(:last-child) {
+  margin-right: 71px;
 }
 
 .slider__wrapper-thumb::after {
@@ -1402,7 +1450,6 @@ html {
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .news__input::placeholder {
@@ -1560,7 +1607,6 @@ html {
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .delivery-form__input::placeholder {
@@ -2002,7 +2048,7 @@ html {
   margin-right: 22px;
   border: none;
   padding: 0;
-  padding-bottom: 17x;
+  padding-bottom: 17px;
 }
 
 .sort__legend {
@@ -2179,6 +2225,14 @@ html {
   cursor: pointer;
 }
 
+.fatness__text {
+  cursor: pointer;
+}
+
+.fatness__text:hover {
+  color: #fcfcfc;
+}
+
 .fatness__label:hover .fatness__mark {
   border-color: #fcfcfc;
 }
@@ -2284,6 +2338,14 @@ html {
 .fillers__input:disabled + .fillers__mark-no-checkbox,
 .fillers__input:disabled ~ .fillers__mark-checkbox path {
   color: rgba(45, 52, 64, 0.4);
+}
+
+.fillers__text {
+  cursor: pointer;
+}
+
+.fillers__text:hover {
+  color: #fcfcfc;
 }
 
 .form__button {

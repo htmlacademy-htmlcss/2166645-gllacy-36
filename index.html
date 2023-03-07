@@ -81,10 +81,10 @@
                     fill="currentColor" />
                 </svg>
               </a>
-              <div class="nav__user-popover popover-search">
+              <div class="nav__user-popover popover-search popover">
                 <form class="popover-search__form" action="https://echo.htmlacademy.ru/" method="get">
                   <label class="popover-search__label">
-                    <input class="popover-search__input popover-search__input--text input input--error input--disabled"
+                    <input class="popover-search__input popover-search__input--text input"
                       type="text" placeholder="Поиск по сайту">
                   </label>
                   <button class="popover-search__delete-button" type="button">
@@ -103,7 +103,7 @@
                 </svg>
                 <span class="nav__user-text">Вход</span>
               </a>
-              <div class="nav__user-popover popover-login">
+              <div class="nav__user-popover popover-login popover">
                 <h2 class="popover-login__title">
                   Личный кабинет
                 </h2>
@@ -111,34 +111,30 @@
                   <ul class="popover-login__list">
                     <li class="popover-login__item">
                       <label class="popover-login__label">
-                        <input class="popover-login__input input input--error input--disabled" type="email"
+                        <input class="popover-login__input input" type="email"
                           placeholder="email@example.com">
                       </label>
                     </li>
                     <li class="popover-login__item">
                       <label class="popover-login__label">
-                        <input class="popover-login__input input input--error input--disabled" type="password"
+                        <input class="popover-login__input input" type="password"
                           placeholder="password">
                       </label>
                     </li>
                   </ul>
                   <div class="popover-login__wrapper">
-                    <button class="popover-login__button-link submit-button submit-button--loading" type="submit">
+                    <button class="popover-login__button-link submit-button" type="submit">
                       Войти
                     </button>
                     <ul class="popover-login__button-list">
                       <li class="popover-login__button-item">
                         <a class="popover-login__link" href="#">
-                          <span class="popover-login__text">
-                            Забыли пароль?
-                          </span>
+                          Забыли пароль?
                         </a>
                       </li>
                       <li class="popover-login__button-item">
                         <a class="popover-login__link" href="#">
-                          <span class="popover-login__text">
-                            Регистрация
-                          </span>
+                          Регистрация
                         </a>
                       </li>
                     </ul>
@@ -164,8 +160,8 @@
                   Нет товаров
                 </span>
               </a>
-              <div class="nav__user-popover popover-cart popover-cart-basic">
-                <div class="popover-cart__content">
+              <div class="nav__user-popover popover-cart popover-cart-basic popover">
+                <form class="popover-cart__form" action=""https://echo.htmlacademy.ru/" method="post">
                   <h2 class="popover-cart__title">
                     Корзина
                   </h2>
@@ -187,7 +183,9 @@
                         310 ₽
                       </b>
                       <button class="popover-cart__delete-button" type="button">
-                        <span class="visually-hidden">Закрыть</span>
+                        <span class="visually-hidden">
+                          Закрыть
+                        </span>
                       </button>
                     </li>
                     <li class="popover-cart__item">
@@ -207,19 +205,21 @@
                         480 ₽
                       </b>
                       <button class="popover-cart__delete-button" type="button">
-                        <span class="visually-hidden">Закрыть</span>
+                        <span class="visually-hidden">
+                          Закрыть
+                        </span>
                       </button>
                     </li>
                   </ul>
                   <div class="popover-cart__total-wrapper">
-                    <button class="popover-cart__order-button submit-button submit-button--loading" type="submit">
+                    <button class="popover-cart__order-button submit-button" type="submit">
                       Оформить заказ
                     </button>
                     <b class="popover-cart__total-sum">
                       Итого: 790 ₽
                     </b>
                   </div>
-                </div>
+                </form>
               </div>
               <div class="nav__user-popover popover-cart popover-cart-no-goods">
                 <p class="popover-cart__text-no-goods">
@@ -239,14 +239,14 @@
             Демонстрация трех видов мороженого
           </h2>
           <ol class="slider__list">
-            <li class="slider__item">
+            <li class="slider__item slider__item--show">
               <div class="slider__ice-cream-container">
                 <div class="slider__description-container">
                   <h3 class="slider__title">
                     Нежный пломбир <br> с клубничным джемом
                   </h3>
                   <p class="slider__description">
-                    Натуральное мороженое из свежих сливок <br >и молока с вкуснейшим клубничным джемом – это идеальный
+                    Натуральное мороженое из свежих сливок <br>и молока с вкуснейшим клубничным джемом – это идеальный
                     десерт для всей семьи.
                   </p>
                   <a class="slider__order-button button" href="#">
@@ -268,7 +268,7 @@
                     </button>
                     <img class="slider__picture" src="images/ice-cream-strawberry-jam.png" width="327" height="507"
                       alt="Мороженое с клубничным джемом в вафильном стаканчике.">
-                    <button class="slider__button slider__button--forward slider__button--disabled" type="button">
+                    <button class="slider__button slider__button--forward" type="button">
                       <span class="visually-hidden">
                         Вперед
                       </span>
@@ -357,9 +357,9 @@
                 </ul>
               </div>
             </li>
-            <li class="slider__item slider__item--blue visually-hidden">
+            <li class="slider__item slider__item--blue">
               <div class="slider__ice-cream-container">
-                <div class="slider__description-container">
+                <div class="slider__description-container slider__description-container--blue">
                   <h3 class="slider__title">
                     Сливочное мороженое со вкусом банана
                   </h3>
@@ -368,13 +368,13 @@
                     летний
                     день.
                   </p>
-                  <a class="slider__order-button button button--loading" href="#">
+                  <a class="slider__order-button button" href="#">
                     Заказать
                   </a>
                 </div>
                 <div class="slider__picture-container">
                   <div class="slider__main-picture-wrapper slider__main-picture-wrapper--blue">
-                    <button class="slider__button slider__button--back slider__button--disabled" type="button">
+                    <button class="slider__button slider__button--back" type="button">
                       <span class="visually-hidden">
                         Назад
                       </span>
@@ -387,7 +387,7 @@
                     </button>
                     <img class="slider__picture" src="images/ice-cream-creamy-banan.png" width="312" height="507"
                       alt="Сливочное мороженое со вкусом банана в вафильном стаканчике.">
-                    <button class="slider__button slider__button--forward slider__button--disabled" type="button">
+                    <button class="slider__button slider__button--forward" type="button">
                       <span class="visually-hidden">
                         Вперед
                       </span>
@@ -476,23 +476,23 @@
                 </ul>
               </div>
             </li>
-            <li class="slider__item slider__item--orange visually-hidden">
+            <li class="slider__item slider__item--orange">
               <div class="slider__ice-cream-container">
-                <div class="slider__description-container">
+                <div class="slider__description-container slider__description-container--orange">
                   <h3 class="slider__title">
-                    Карамельный пломбир с маршмеллоу
+                    Карамельный пломбир <br> с маршмеллоу
                   </h3>
                   <p class="slider__description">
-                    Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех
+                    Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет <br> сердца сладкоежек всех
                     возрастов.
                   </p>
-                  <a class="slider__order-button button button--loading" href="#">
+                  <a class="slider__order-button button" href="#">
                     Заказать
                   </a>
                 </div>
                 <div class="slider__picture-container">
                   <div class="slider__main-picture-wrapper slider__main-picture-wrapper--orange">
-                    <button class="slider__button slider__button--back slider__button--disabled" type="button">
+                    <button class="slider__button slider__button--back" type="button">
                       <span class="visually-hidden">
                         Назад
                       </span>
@@ -505,7 +505,7 @@
                     </button>
                     <img class="slider__picture" src="images/ice-cream-caramel-marshmallow.png" width="312" height="507"
                       alt="Карамельный пломбир с маршмеллоу в вафильном стаканчике.">
-                    <button class="slider__button slider__button--forward slider__button--disabled" type="button">
+                    <button class="slider__button slider__button--forward" type="button">
                       <span class="visually-hidden">
                         Вперед
                       </span>
@@ -659,8 +659,8 @@
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true"
-                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
@@ -689,8 +689,8 @@
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true"
-                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
@@ -719,8 +719,8 @@
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true"
-                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
@@ -749,8 +749,8 @@
                   <span class="visually-hidden">
                     Корзина
                   </span>
-                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true"
-                    focusable="false" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="ice-cream__icon" width="16" height="16" aria-hidden="true" focusable="false"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                       fill="currentColor" />
