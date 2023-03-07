@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -41,6 +40,7 @@ html {
 }
 
 .page__body {
+  min-width: 1170px;
   margin: 0;
   font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
@@ -326,6 +326,10 @@ html {
   position: relative;
 }
 
+.nav__item--catalog:hover .nav-catalog__list {
+  display: block;
+}
+
 .nav__item--catalog:focus-within .nav-catalog__list {
   display: block;
 }
@@ -339,10 +343,11 @@ html {
   padding-bottom: 8px;
   position: absolute;
   top: 44px;
-  left: 0;
+  left: 1px;
   width: 135px;
   background-color: #fcfcfc;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  z-index: 1;
 }
 
 .nav-catalog__item {
@@ -350,12 +355,12 @@ html {
 }
 
 .nav-catalog__item:first-child {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   position: relative;
 }
 
 .nav-catalog__item:first-child::before {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   position: absolute;
   content: "";
   width: 103px;
@@ -372,7 +377,7 @@ html {
   text-decoration: none;
   color: #2d3440;
   margin: 0;
-  padding: 6px 13px 6px 16px;
+  padding: 8px 13px 5px 16px;
 }
 
 .nav-catalog__link:hover {
@@ -426,7 +431,7 @@ html {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-right: 16px;
+  margin-right: 19px;
 }
 
 .nav__user-item:nth-child(3n) {
@@ -447,6 +452,10 @@ html {
 
 .nav__user-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
+}
+
+.nav__user-link:hover ~ .popover {
+  display: block;
 }
 
 .nav__user-link:active {
@@ -533,16 +542,16 @@ html {
 }
 
 .popover-search__input {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  padding: 14px 45px 14px 16px;
+  padding: 14px 45px 13px 16px;
   flex-grow: 1;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .popover-search__input::placeholder {
@@ -616,7 +625,7 @@ html {
 
 .popover-login__input {
   flex-grow: 1;
-  padding: 14px 16px;
+  padding: 14px 16px 13px 16px;
   border-radius: 4px;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
@@ -624,10 +633,10 @@ html {
   line-height: 20px;
   background-color: #ffffff;
   color: #2d3440;
-  cursor: pointer;
 }
 
 .popover-login__input::placeholder {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -647,15 +656,15 @@ html {
   padding: 0;
 }
 
+.popover-login__button-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .popover-login__link {
   font-size: 14px;
   text-decoration: none;
   color: #2d3440;
-  display: block;
   padding: 0;
-}
-
-.popover-login__text {
   border-bottom: 1px solid #2d3440;
 }
 
@@ -675,7 +684,7 @@ html {
   z-index: 1;
   box-sizing: border-box;
   width: 441px;
-  padding: 48px;
+  padding: 54px 48px 48px 48px;
   color: #2d3440;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -693,13 +702,13 @@ html {
   display: block;
 }
 
-.popover-cart__content {
+.popover-cart__form {
   height: 100%;
 }
 
 .popover-cart__title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .popover-cart__list {
@@ -721,13 +730,14 @@ html {
 
 .popover-cart__picture-wrapper {
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 15px;
   width: 46px;
   height: 46px;
 }
 
 .popover-cart__name {
   margin: 0;
+  padding-top: 2px;
   margin-bottom: 4px;
   width: 150px;
 }
@@ -741,6 +751,8 @@ html {
 }
 
 .popover-cart__price {
+  font-size: 18px;
+  line-height: 22px;
   margin-left: auto;
   margin-right: 40px;
   align-self: center;
@@ -775,19 +787,27 @@ html {
   align-items: center;
 }
 
+.popover-cart__total-sum {
+  font-family: "Inter", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 /*Текст в корзине "Нет товара", popover "Корзина пуста"*/
 .nav__user-text-no-goods {
   display: none;
 }
 
-.nav__user-text-no-goods--open {
+/*.nav__user-text-no-goods--open {
   display: block;
-}
+}*/
 
 .popover-cart-no-goods {
   width: 288px;
+  padding-top: 49px;
   padding-left: 26px;
   padding-right: 26px;
+  z-index: 1;
   display: none;
 }
 
@@ -813,19 +833,24 @@ html {
 }
 
 .slider {
-  margin-bottom: 80px;
+  margin-bottom: 62px;
  }
 
 .slider__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
   padding: 0;
 }
 
 .slider__item {
   color: #2d3440;
-  display: flex;
   flex-direction: column;
+  display: none;
+}
+
+.slider__item--show {
+  display: flex;
 }
 
 .slider__item--orange { /*при реализации через JS убрать и менять свойство background-color у класса .page__body */
@@ -850,11 +875,24 @@ html {
   flex-direction: column;
   width: 470px;
   margin-top: 115px;
+  margin-right: 5px;
+}
+
+.slider__description-container--blue {
+  margin-right: 31px;
+}
+
+.slider__description-container--orange {
+  margin-right: 32px;
 }
 
 .slider__title {
+  font-size: 36px;
+  line-height: 46px;
   margin: 0;
   margin-bottom: 24px;
+  font-weight: 900;
+  color: #2d3440;
 }
 
 .slider__description {
@@ -871,8 +909,12 @@ html {
 
 .slider__picture-container {
   display: flex;
-  width: 630px;
+  width: 625px;
   position: relative;
+}
+
+.slider__picture {
+  object-fit: cover;
 }
 
 .slider__button {
@@ -882,7 +924,7 @@ html {
   border-radius: 50%;
   border: 2px solid #fcfcfc;
   background-color: rgba(252, 252, 252, 0.3);
-  top: 50%;
+  top: calc(50% + 4px);
   cursor: pointer;
 }
 
@@ -896,6 +938,7 @@ html {
 }
 
 .slider__button-icon {
+  vertical-align: middle;
   color: #fcfcfc;
 }
 
@@ -923,7 +966,8 @@ html {
   color: #2d3440;
 }
 
-.slider__button--disabled {
+/*состояние disabled кнопок назад и вперед слайдера*/
+slider__button--disabled {
   opacity: 0.4;
 }
 
@@ -945,6 +989,10 @@ html {
   z-index: -1;
 }
 
+.slider__main-picture-wrapper--orange {
+  margin-right: 79px;
+}
+
 .slider__main-picture-wrapper--orange::after {
   width: 312px;
   background-color: #fcdc92;
@@ -958,12 +1006,21 @@ html {
 .slider__wrapper-thumb {
   position: relative;
   align-self: center;
-  margin-right: 0;
+  margin-right: 10px;
+  margin-top: 8px;
   opacity: 40%;
 }
 
 .slider__wrapper-thumb:not(:last-child) {
   margin-right: 75px;
+}
+
+.slider__wrapper-thumb--blue:not(:last-child) {
+  margin-right: 80px;
+}
+
+.slider__wrapper-thumb--orange:not(:last-child) {
+  margin-right: 71px;
 }
 
 .slider__wrapper-thumb::after {
@@ -994,12 +1051,14 @@ html {
 .slider__footer-container {
   display: flex;
   justify-content: space-between;
+  margin-top: -5px;
 }
 
 .slider__pagination {
   display: flex;
   width: 52px;
   margin: 0;
+  margin-top: auto;
   padding: 0;
   justify-content: space-between;
   list-style-type: none;
@@ -1055,7 +1114,7 @@ html {
 .gift__title {
   width: 434px;
   text-align: center;
-  margin: 0 auto 55px auto;
+  margin: 0 auto 54px auto;
 }
 
 .gift__list {
@@ -1072,7 +1131,7 @@ html {
   display: flex;
   width: 534px;
   padding-left: 36px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .gift__descriptopn-container {
@@ -1128,7 +1187,7 @@ html {
   flex-direction: column;
   position: relative;
   width: 190px;
-  padding: 10px 40px 24px;
+  padding: 10px 40px 23px;
 }
 
 .ice-cream__item::before {
@@ -1137,7 +1196,7 @@ html {
   width: 100%;
   height: calc(100% - 61px);
   background-color: #fcfcfc;
-  border-radius: 10px;
+  border-radius: 8px;
   z-index: -1;
   left: 0;
   bottom: 0;
@@ -1148,11 +1207,14 @@ html {
 }
 
 .ice-cream__link:hover {
-  opacity: 0.6;
+  box-shadow: 2px 3px 10px #ff2f64;
+  border-radius: 16px;
 }
 
 .ice-cream__link:active {
-  opacity: 0.3;
+  background-color: #feafc3;
+  box-shadow: 2px 3px 10px #ff2f64;
+  border-radius: 16px;
 }
 
 .ice-cream__picture-wrapper {
@@ -1174,10 +1236,12 @@ html {
   color: #2d3440;
   margin: 0;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .ice-cream__description {
+  font-size: 16px;
+  line-height: 22px;
   margin: 0 auto;
   text-align: center;
   color: #565c66;
@@ -1203,11 +1267,12 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #ff2f64;
   outline: 2px solid #ff2f64;
+  outline-offset: -2px;
 }
 
 .ice-cream__icon {
@@ -1230,9 +1295,9 @@ html {
 
 .ice-cream__basket-button:focus-visible {
   outline: 2px solid #2d3440;
-  outline-offset: 0;
 }
 
+/*состояние disabled кнопки "Корзина" в карточках*/
 .ice-cream__basket-button--disabled {
   background-color: #b9b9b9;
   outline-color: #b9b9b9;
@@ -1245,14 +1310,16 @@ html {
 .features {
   background-color: #f3ae0083;
   background-image: url("../images/waffle-background.jpg");
+  background-position: 0 -15px;
+  background-size: 147%;
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 16px;
   margin-bottom: 80px;
 }
 
 .features__container {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 56px 40px;
 }
 
@@ -1269,7 +1336,7 @@ html {
   padding: 0;
   margin: 0;
   row-gap: 40px;
-  column-gap: 32px;
+  column-gap: 31px;
 }
 
 .features__item {
@@ -1278,8 +1345,8 @@ html {
 
 .features__icon-container {
   display: flex;
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 45px;
   border: 2px solid #2D3440;
   border-radius: 50%;
   margin-right: 16px;
@@ -1305,10 +1372,10 @@ html {
   background-color: #ffffff;
   background-image: url("../images/ice-cream-raspberry-background.jpg");
   background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: -10px -110px;
+  background-size: 114%;
+  background-position: -5px -107px;
   width: 506px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 33px 32px;
 
 }
@@ -1346,14 +1413,15 @@ html {
   background-color: #ffffff;
   background-image: url("../images/letter-background.jpg");
   background-size: 110%;
+  background-position: -10px -10px;
   width: 558px;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 6px;
 }
 
 .news__container {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 26px;
 }
 
@@ -1377,15 +1445,15 @@ html {
   font-size: 16px;
   line-height: 20px;
   color:#2d3440;
-  padding: 14px 15px;
+  padding: 13px 15px;
   flex-grow: 1;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .news__input::placeholder {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -1394,20 +1462,21 @@ html {
 .news__button {
   margin-top: 2px;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .delivery {
   background-color: #e7e7e7;
   background-image: url("../images/ice-cream-fruits-background.jpg");
   background-repeat: no-repeat;
-  background-size: 103%;
-  background-position: 0 -130px;
+  background-size: 105%;
+  background-position: -3px -140px;
   display: flex;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
   padding-left: 100px;
   padding-right: 64px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .delivery__text-container {
@@ -1432,7 +1501,7 @@ html {
   width: 420px;
   min-height: 326px;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .delivery-form__action {
@@ -1470,10 +1539,10 @@ html {
 
 .delivery-form__tooltip {
   position: absolute;
-  margin-top: 2px;
+  margin-top: 3px;
   margin-left: 5px;
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
 }
 
 .delivery-form__tooltip-toggle {
@@ -1534,14 +1603,14 @@ html {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
-  padding: 14px 16px;
+  padding: 14px 16px 13px 16px;
   border: 1px solid #b9b9b9;
   outline: 1px solid #b9b9b9;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 4px;
 }
 
 .delivery-form__input::placeholder {
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #b9b9b9;
@@ -1559,7 +1628,7 @@ html {
   background-size: cover;
   background-position: 0 -80px;
   padding: 64px 763px 64px 64px;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .address-container__section {
@@ -1668,8 +1737,6 @@ html {
 .useful-info {
   display: grid;
   grid-template-columns: 150px 205px;
-  column-gap: 1px;
-  row-gap: 8px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1711,10 +1778,15 @@ html {
 }
 
 .footer__htmlacademy {
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 193px;
+}
+
+.footer__logo-text {
+  margin-bottom: 8px;
 }
 
 .footer__logo-text:hover {
@@ -1746,6 +1818,15 @@ html {
 .footer__made-in-link:active {
   opacity: 0.3;
 }
+
+.useful-info--catalog {
+  margin-top: -3px;
+}
+
+.footer__htmlacademy--catalog {
+  margin-top: -1px;
+}
+
 /*Модальное окно*/
 .modal-container {
   position: fixed;
@@ -1764,10 +1845,11 @@ html {
 .modal__auth {
   position: relative;
   margin: auto;
-  padding: 64px 62px 66px 64px;;
+  padding: 64px 64px 66px 64px;
   background-color: #fcfcfc;
   box-sizing: border-box;
   width: 570px;
+  border-radius: 8px;
 }
 
 .modal__close-button {
@@ -1810,7 +1892,8 @@ html {
 }
 
 .modal-form__input {
-  padding: 16px 14px;
+  padding: 13px 16px 12px 15px;
+  font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: 2px solid #b9b9b9;
@@ -1821,7 +1904,7 @@ html {
 }
 
 .modal-form__textarea {
-  padding: 16px 14px;
+  padding: 14px 16px;
   font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1830,7 +1913,7 @@ html {
   background-color: #ffffff;
   color: #2d3440;
   flex-grow: 1;
-  min-height: 149px;
+  min-height: 117px;
 }
 
 .modal-form__input::placeholder,
@@ -1887,7 +1970,7 @@ html {
 
 /* Catalog */
 .header--catalog {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .header-inner__breadcrumbs {
@@ -1900,8 +1983,8 @@ html {
 
 .breadcrumbs__item {
   position: relative;
-  margin-right: 8px;
-  padding-right: 20px;
+  margin-right: 6px;
+  padding-right: 22px;
 }
 
 .breadcrumbs__item:not(:last-of-type)::before {
@@ -1913,7 +1996,7 @@ html {
   background-repeat: no-repeat;
   right: 0;
   top: 50%;
-  transform: translateY(-20%);
+  transform: translateY(-30%);
 }
 
 .breadcrumbs__link {
@@ -1942,7 +2025,7 @@ html {
   line-height: 46px;
   color: #2d3440;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .selection {
@@ -1956,19 +2039,20 @@ html {
 .selection__form {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1170px;
+  width: 1170px;
   margin-bottom: 34px;
 }
 
 .form__sort {
-  margin-right: 24px;
+  margin: 0;
+  margin-right: 22px;
   border: none;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .sort__legend {
-  padding-left: 16px;
+  padding-left: 15px;
   margin-bottom: 8px;
 }
 
@@ -1981,11 +2065,11 @@ html {
   line-height: 20px;
   color: #2d3440;
   border: none;
-  padding: 9px 63px 9px 16px;
+  padding: 9px 63px 7px 16px;
   border-radius: 20px;
   background-image: url("../images/catalog/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 14px center;
+  background-position: right 16px center;
   appearance: none;
   cursor: pointer;
 }
@@ -2002,10 +2086,10 @@ html {
 }
 
 .form__price {
-  margin-right: 24px;
+  margin-right: 22px;
   border: none;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .price__legend {
@@ -2016,7 +2100,7 @@ html {
 }
 
 .price__range-scale-container {
-  padding: 19px 16px 17px 16px;
+  padding: 17px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
 }
@@ -2084,7 +2168,7 @@ html {
 
 .toggle-min {
   top: -7px;
-  left: -10px;
+  left: -6px;
 }
 
 .toggle-max {
@@ -2094,7 +2178,7 @@ html {
 
 .form__fatness {
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   border: none;
 }
 
@@ -2109,7 +2193,7 @@ html {
   background-color: rgba(252, 252, 252, 0.3);
   display: flex;
   margin: 0;
-  padding: 9px 24px;
+  padding: 9px 24px 7px 25px;
   list-style-type: none;
   border-radius: 20px;
 }
@@ -2131,7 +2215,7 @@ html {
 
 .fatness__mark {
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: 0;
   width: 13px;
   height: 13px;
@@ -2139,6 +2223,14 @@ html {
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
+}
+
+.fatness__text {
+  cursor: pointer;
+}
+
+.fatness__text:hover {
+  color: #fcfcfc;
 }
 
 .fatness__label:hover .fatness__mark {
@@ -2175,6 +2267,7 @@ html {
 
 .form__fillers {
   padding: 0;
+  margin: 0;
   margin-right: 16px;
   border: none;
 }
@@ -2196,7 +2289,7 @@ html {
 }
 
 .fillers__item:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .fillers__item {
@@ -2245,6 +2338,14 @@ html {
 .fillers__input:disabled + .fillers__mark-no-checkbox,
 .fillers__input:disabled ~ .fillers__mark-checkbox path {
   color: rgba(45, 52, 64, 0.4);
+}
+
+.fillers__text {
+  cursor: pointer;
+}
+
+.fillers__text:hover {
+  color: #fcfcfc;
 }
 
 .form__button {
