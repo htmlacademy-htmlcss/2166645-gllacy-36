@@ -797,9 +797,9 @@ html {
   display: none;
 }
 
-.nav__user-text-no-goods--open {
-  /*display: block;*/
-}
+/*.nav__user-text-no-goods--open {
+  display: block;
+}*/
 
 .popover-cart-no-goods {
   width: 288px;
@@ -1245,10 +1245,6 @@ slider__button--disabled {
   text-align: center;
   color: #565c66;
   margin-bottom: 16px;
-}
-
-.ice-cream__description--catalog {
-
 }
 
 .ice-cream__price-basket-wrapper {
