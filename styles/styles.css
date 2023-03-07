@@ -1206,11 +1206,14 @@ slider__button--disabled {
 }
 
 .ice-cream__link:hover {
-  opacity: 0.6;
+  box-shadow: 2px 3px 10px #ff2f64;
+  border-radius: 16px;
 }
 
 .ice-cream__link:active {
-  opacity: 0.3;
+  background-color: #feafc3;
+  box-shadow: 2px 3px 10px #ff2f64;
+  border-radius: 16px;
 }
 
 .ice-cream__picture-wrapper {
