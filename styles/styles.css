@@ -70,6 +70,7 @@ html {
   border-radius: 2em;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .button:hover {
@@ -129,6 +130,7 @@ html {
   border: none;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  cursor: pointer;
 }
 
 .submit-button:hover {
@@ -458,6 +460,10 @@ html {
   display: block;
 }
 
+.nav__user-link:focus-visible ~ .popover {
+  display: block;
+}
+
 .nav__user-link:active {
   background-color: #fcfcfc;
 }
@@ -754,7 +760,7 @@ html {
   font-size: 18px;
   line-height: 22px;
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: 24px;
   align-self: center;
   width: 70px;
   text-align: center;
@@ -764,12 +770,12 @@ html {
   border: none;
   background-color: transparent;
   padding: 0;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
   align-self: center;
   background-image: url("../images/cross.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: calc(100% - 4px) 50%;
   cursor: pointer;
 }
 
@@ -825,6 +831,21 @@ html {
   color: #2d3440
 }
 
+/*
+.popover::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 9px;
+  background-color: transparent;
+  top: -9px;
+  right: 0;
+}
+
+.nav__user-link:hover > .popover::before > .popover {
+  display: block;
+}*/
+
 .title-section {
   font-weight: 900;
   font-size: 32px;
@@ -833,7 +854,7 @@ html {
 }
 
 .slider {
-  margin-bottom: 62px;
+   margin-bottom: 62px;
  }
 
 .slider__list {
@@ -909,6 +930,7 @@ html {
 
 .slider__picture-container {
   display: flex;
+  align-items: center;
   width: 625px;
   position: relative;
 }
@@ -1121,6 +1143,7 @@ slider__button--disabled {
   display: flex;
   width: 1170px;
   justify-content: space-between;
+  align-items: start;
   margin: 0;
   padding: 0;
 }
@@ -1134,7 +1157,7 @@ slider__button--disabled {
   border-radius: 16px;
 }
 
-.gift__descriptopn-container {
+.gift__description-container {
   width: 317px;
   margin: auto 0;
   padding-top: 36px;
@@ -1156,7 +1179,8 @@ slider__button--disabled {
 
 .gift__picture {
   display: block;
-  margin: auto 0;
+  margin: 0;
+  margin-top: auto;
   padding: 0;
 }
 
@@ -1365,6 +1389,7 @@ slider__button--disabled {
 .blog-news-container {
   display: flex;
   justify-content: space-between;
+  align-items: start;
   margin-bottom: 80px;
 }
 
@@ -1417,6 +1442,7 @@ slider__button--disabled {
   width: 558px;
   border-radius: 16px;
   padding: 6px;
+  background-repeat: no-repeat;
 }
 
 .news__container {
@@ -1461,7 +1487,6 @@ slider__button--disabled {
 
 .news__button {
   margin-top: 2px;
-  cursor: pointer;
   margin-right: 5px;
 }
 
@@ -1469,9 +1494,10 @@ slider__button--disabled {
   background-color: #e7e7e7;
   background-image: url("../images/ice-cream-fruits-background.jpg");
   background-repeat: no-repeat;
-  background-size: 105%;
-  background-position: -3px -140px;
+  background-size: cover;
+  background-position: center;
   display: flex;
+  align-items: start;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
   padding-left: 100px;
@@ -1499,7 +1525,6 @@ slider__button--disabled {
   flex-direction: column;
   background-color: #fcfcfc;
   width: 420px;
-  min-height: 326px;
   padding: 40px;
   border-radius: 8px;
 }
@@ -1618,15 +1643,14 @@ slider__button--disabled {
 
 .delivery-form__button {
   margin: 0 auto;
-  cursor: pointer;
 }
 
 .address-container {
   background-color: #e7e7e7;
   background-image: url("../images/three-ice-creams-background.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -80px;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 64px 763px 64px 64px;
   border-radius: 16px;
 }
@@ -1699,7 +1723,6 @@ slider__button--disabled {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
   row-gap: 5px;
-  height: 24px;
   width: 104px;
   padding: 0;
   list-style-type: none;
@@ -1855,15 +1878,16 @@ slider__button--disabled {
 .modal__close-button {
   position: absolute;
   padding: 0;
-  width: 20px;
-  height: 20px;
+  width: 84px;
+  height: 84px;
   background-color: transparent;
   border: none;
-  background-image: url("../images/cross.svg");
+  background-image: url("../images/cross-modal.svg");
   background-repeat: no-repeat;
-  top: 32px;
-  right: 32px;
+  top: 0;
+  right: 0;
   background-position: center;
+  cursor: pointer;
 }
 
 .modal-form__title {
@@ -1888,7 +1912,7 @@ slider__button--disabled {
 }
 
 .modal-form__item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .modal-form__input {
@@ -1904,7 +1928,7 @@ slider__button--disabled {
 }
 
 .modal-form__textarea {
-  padding: 14px 16px;
+  padding: 14px 16px 14px 15px;
   font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -2250,7 +2274,7 @@ slider__button--disabled {
   background-color: #2d3440;
   border-radius: 50%;
   content: "";
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-52%) translateY(-52%);
 }
 
 .fatness__input:checked:hover + .fatness__mark::before {
@@ -2303,6 +2327,10 @@ slider__button--disabled {
   padding-left: 24px;
 }
 
+.fillers__label:hover {
+  color: #fcfcfc;
+}
+
 .fillers__mark-no-checkbox {
   position: absolute;
   top: 2px;
@@ -2330,8 +2358,8 @@ slider__button--disabled {
   display: none;
 }
 
-.fillers__mark-no-checkbox:hover,
-.fillers__mark-checkbox:hover path {
+.fillers__label:hover .fillers__mark-no-checkbox,
+.fillers__label:hover .fillers__mark-checkbox path {
   color: #fcfcfc;
 }
 
@@ -2342,10 +2370,6 @@ slider__button--disabled {
 
 .fillers__text {
   cursor: pointer;
-}
-
-.fillers__text:hover {
-  color: #fcfcfc;
 }
 
 .form__button {
@@ -2359,7 +2383,6 @@ slider__button--disabled {
   padding: 8px 53px;
   border-radius: 2em;
   border: 2px solid #fcfcfc;
-  cursor: pointer;
 }
 
 .form__button:hover {
@@ -2437,10 +2460,18 @@ slider__button--disabled {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
+.pagination__link--next:hover {
+  color: rgba(252, 252, 252, 0.5);
+}
+
 .pagination__link-number:active {
   background-color: rgba(252, 252, 252, 0.5);
   outline: 1px solid #fcfcfc;
   outline-offset: -1px;
+}
+
+.pagination__link--next:active {
+  opacity: 0.3;
 }
 
 .pagination__link-number:focus-visible {
