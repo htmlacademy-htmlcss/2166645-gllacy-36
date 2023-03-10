@@ -831,21 +831,6 @@ html {
   color: #2d3440
 }
 
-/*
-.popover::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 9px;
-  background-color: transparent;
-  top: -9px;
-  right: 0;
-}
-
-.nav__user-link:hover > .popover::before > .popover {
-  display: block;
-}*/
-
 .title-section {
   font-weight: 900;
   font-size: 32px;
